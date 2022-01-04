@@ -1,0 +1,5329 @@
+{
+	"name": "CopyPipeline_full1",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach_hu8",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.cw_items",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Copy_hu8",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [
+								{
+									"name": "Source",
+									"value": "dbo.@{item().source.table}"
+								},
+								{
+									"name": "Destination",
+									"value": "@{item().destination.schema}.@{item().destination.table}"
+								}
+							],
+							"typeProperties": {
+								"source": {
+									"type": "SqlServerSource",
+									"partitionOption": "None"
+								},
+								"sink": {
+									"type": "AzureSqlSink",
+									"tableOption": "autoCreate"
+								},
+								"enableStaging": false,
+								"validateDataConsistency": false
+							},
+							"inputs": [
+								{
+									"referenceName": "SourceDataset_hu8",
+									"type": "DatasetReference",
+									"parameters": {
+										"cw_table": "@item().source.table"
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "DestinationDataset_hu8",
+									"type": "DatasetReference",
+									"parameters": {
+										"cw_schema": "@item().destination.schema",
+										"cw_table": "@item().destination.table"
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"cw_items": {
+				"type": "Array",
+				"defaultValue": [
+					{
+						"source": {
+							"table": "10232009_providertype"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "10232009_providertype"
+						}
+					},
+					{
+						"source": {
+							"table": "10302009_unenroll"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "10302009_unenroll"
+						}
+					},
+					{
+						"source": {
+							"table": "20091109importedcustmast"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "20091109importedcustmast"
+						}
+					},
+					{
+						"source": {
+							"table": "20091109VORSUpload"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "20091109VORSUpload"
+						}
+					},
+					{
+						"source": {
+							"table": "20091113_provider_priority_group_preupdate"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "20091113_provider_priority_group_preupdate"
+						}
+					},
+					{
+						"source": {
+							"table": "20091218_UpdatePickPriority"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "20091218_UpdatePickPriority"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_activity_id"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_activity_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_alert_number"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_alert_number"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_appointmentid"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_appointmentid"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_assessorial_id"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_assessorial_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_auditlog_trans_num"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_auditlog_trans_num"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_cacheid"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_cacheid"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_carrier_rule_id"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_carrier_rule_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_cartonmst_black_id"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_cartonmst_black_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_cartonmst_blue_id"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_cartonmst_blue_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_cartonmst_carton_id"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_cartonmst_carton_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_cartonmst_carton_num"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_cartonmst_carton_num"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_cartonmst_red_id"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_cartonmst_red_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_comment_comment_num"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "_SEQT_comment_comment_num"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_consent_form_number"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_consent_form_number"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_contactid"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_contactid"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_creditnumber"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_creditnumber"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_custaddr_code"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_custaddr_code"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_custmast_audit"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_custmast_audit"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_custmast_code"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_custmast_code"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_cycle_cnt_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_cycle_cnt_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_email_template_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_email_template_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_emailtrigger_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_emailtrigger_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_encounterid"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_encounterid"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_err_msg_code"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_err_msg_code"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_fourwall_link"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_fourwall_link"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_ifaces_1"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_ifaces_1"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_ifaces_2"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_ifaces_2"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_ifaces_3"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_ifaces_3"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_ifaces_4"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_ifaces_4"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_inv_prob_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_inv_prob_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_inventory_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_inventory_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_inventorysubdetail_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_inventorysubdetail_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_invoicenumber"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_invoicenumber"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_ipawsheadercode"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_ipawsheadercode"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_item_alloc_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_item_alloc_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_item_history_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_item_history_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_kit_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_kit_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_loadid"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_loadid"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_lsb"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_lsb"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_movemst_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_movemst_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_msb"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_msb"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_order_tag"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_order_tag"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_ordhdr_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_ordhdr_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_ordhdr_order"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_ordhdr_order"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_pallet_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_pallet_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_palletmst_pallet_num"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_palletmst_pallet_num"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_patient_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_patient_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_patientevent"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_patientevent"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_pick_batch"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_pick_batch"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_pick_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_pick_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_pod_trans_num"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_pod_trans_num"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_pomst_po_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_pomst_po_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_print_pallet"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_print_pallet"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_prod_stg_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_prod_stg_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_progtransid"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_progtransid"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_qa_release_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_qa_release_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_qahistorylink"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_qahistorylink"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_rate_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_rate_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_replenishment_xref"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_replenishment_xref"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_report_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_report_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_reportid"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_reportid"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_requisition_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_requisition_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_rma_number"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_rma_number"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_rtmst_rt_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_rtmst_rt_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_rtmst_rt_num"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_rtmst_rt_num"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_rtn_ctn_num"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_rtn_ctn_num"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_scheduledtask_lower"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_scheduledtask_lower"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_scheduledtask_upper"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_scheduledtask_upper"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_seq_develop_4"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_seq_develop_4"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_seq_develop_5"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_seq_develop_5"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_seq_develop_6"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_seq_develop_6"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_seq_develop_7"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_seq_develop_7"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_serial_number"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_serial_number"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_shpmst_manifest"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_shpmst_manifest"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_skusku_link"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_skusku_link"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_sug_movement_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_sug_movement_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_task_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_task_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_ticketnumber"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_ticketnumber"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_transport_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_transport_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_vendaddr_id"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_vendaddr_id"
+						}
+					},
+					{
+						"source": {
+							"table": "_SEQT_webcontentid"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "_SEQT_webcontentid"
+						}
+					},
+					{
+						"source": {
+							"table": "abc"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "abc"
+						}
+					},
+					{
+						"source": {
+							"table": "Actives"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "Actives"
+						}
+					},
+					{
+						"source": {
+							"table": "activity"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "activity"
+						}
+					},
+					{
+						"source": {
+							"table": "advanced_directives"
+						},
+						"destination": {
+							"schema": "lz",
+							"table": "advanced_directives"
+						}
+					},
+					{
+						"source": {
+							"table": "afflications"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "afflications"
+						}
+					},
+					{
+						"source": {
+							"table": "age_groups"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "age_groups"
+						}
+					},
+					{
+						"source": {
+							"table": "age_units"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "age_units"
+						}
+					},
+					{
+						"source": {
+							"table": "agency"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "agency"
+						}
+					},
+					{
+						"source": {
+							"table": "agency_types_of_services"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "agency_types_of_services"
+						}
+					},
+					{
+						"source": {
+							"table": "ahfs"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ahfs"
+						}
+					},
+					{
+						"source": {
+							"table": "alert_definition"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "alert_definition"
+						}
+					},
+					{
+						"source": {
+							"table": "alert_employee"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "alert_employee"
+						}
+					},
+					{
+						"source": {
+							"table": "alertinstance_employee"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "alertinstance_employee"
+						}
+					},
+					{
+						"source": {
+							"table": "allergy"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "allergy"
+						}
+					},
+					{
+						"source": {
+							"table": "allergy_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "allergy_types"
+						}
+					},
+					{
+						"source": {
+							"table": "allowedinv"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "allowedinv"
+						}
+					},
+					{
+						"source": {
+							"table": "Applications"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "Applications"
+						}
+					},
+					{
+						"source": {
+							"table": "assessment_groups"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "assessment_groups"
+						}
+					},
+					{
+						"source": {
+							"table": "ASSESSMENT_IMAGE_MAPPINGS"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ASSESSMENT_IMAGE_MAPPINGS"
+						}
+					},
+					{
+						"source": {
+							"table": "assessment_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "assessment_types"
+						}
+					},
+					{
+						"source": {
+							"table": "assessorial"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "assessorial"
+						}
+					},
+					{
+						"source": {
+							"table": "assessorial_code"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "assessorial_code"
+						}
+					},
+					{
+						"source": {
+							"table": "attributes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "attributes"
+						}
+					},
+					{
+						"source": {
+							"table": "auditlog"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "auditlog"
+						}
+					},
+					{
+						"source": {
+							"table": "auditlog_adjustment_checks"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "auditlog_adjustment_checks"
+						}
+					},
+					{
+						"source": {
+							"table": "auditlog_adjustments"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "auditlog_adjustments"
+						}
+					},
+					{
+						"source": {
+							"table": "auditlog_email"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "auditlog_email"
+						}
+					},
+					{
+						"source": {
+							"table": "barcodedtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "barcodedtl"
+						}
+					},
+					{
+						"source": {
+							"table": "barcodemst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "barcodemst"
+						}
+					},
+					{
+						"source": {
+							"table": "billcategory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "billcategory"
+						}
+					},
+					{
+						"source": {
+							"table": "billcode"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "billcode"
+						}
+					},
+					{
+						"source": {
+							"table": "billcustmin"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "billcustmin"
+						}
+					},
+					{
+						"source": {
+							"table": "billingperiod"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "billingperiod"
+						}
+					},
+					{
+						"source": {
+							"table": "billrates"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "billrates"
+						}
+					},
+					{
+						"source": {
+							"table": "bin_size"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "bin_size"
+						}
+					},
+					{
+						"source": {
+							"table": "binmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "binmst"
+						}
+					},
+					{
+						"source": {
+							"table": "bkmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "bkmst"
+						}
+					},
+					{
+						"source": {
+							"table": "bm_tables"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "bm_tables"
+						}
+					},
+					{
+						"source": {
+							"table": "business_rule"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "business_rule"
+						}
+					},
+					{
+						"source": {
+							"table": "cache_detail"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cache_detail"
+						}
+					},
+					{
+						"source": {
+							"table": "cache_header"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cache_header"
+						}
+					},
+					{
+						"source": {
+							"table": "cardiac_rhythms"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cardiac_rhythms"
+						}
+					},
+					{
+						"source": {
+							"table": "carrier"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "carrier"
+						}
+					},
+					{
+						"source": {
+							"table": "carrier_rule"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "carrier_rule"
+						}
+					},
+					{
+						"source": {
+							"table": "carrier_service"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "carrier_service"
+						}
+					},
+					{
+						"source": {
+							"table": "carton_size"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "carton_size"
+						}
+					},
+					{
+						"source": {
+							"table": "cartondtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cartondtl"
+						}
+					},
+					{
+						"source": {
+							"table": "cartonmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cartonmst"
+						}
+					},
+					{
+						"source": {
+							"table": "cartonopt"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cartonopt"
+						}
+					},
+					{
+						"source": {
+							"table": "categorysetupicd9"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "categorysetupicd9"
+						}
+					},
+					{
+						"source": {
+							"table": "categorysetuptesttype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "categorysetuptesttype"
+						}
+					},
+					{
+						"source": {
+							"table": "cdcinventory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cdcinventory"
+						}
+					},
+					{
+						"source": {
+							"table": "chief_complaints"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "chief_complaints"
+						}
+					},
+					{
+						"source": {
+							"table": "cities"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cities"
+						}
+					},
+					{
+						"source": {
+							"table": "cmpmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cmpmst"
+						}
+					},
+					{
+						"source": {
+							"table": "codelist"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "codelist"
+						}
+					},
+					{
+						"source": {
+							"table": "comdet"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "comdet"
+						}
+					},
+					{
+						"source": {
+							"table": "comment_"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "comment_"
+						}
+					},
+					{
+						"source": {
+							"table": "comment_attribute"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "comment_attribute"
+						}
+					},
+					{
+						"source": {
+							"table": "commsg"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "commsg"
+						}
+					},
+					{
+						"source": {
+							"table": "commst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "commst"
+						}
+					},
+					{
+						"source": {
+							"table": "conflict"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "conflict"
+						}
+					},
+					{
+						"source": {
+							"table": "consent_form_document"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "consent_form_document"
+						}
+					},
+					{
+						"source": {
+							"table": "consent_forms"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "consent_forms"
+						}
+					},
+					{
+						"source": {
+							"table": "contactlist"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "contactlist"
+						}
+					},
+					{
+						"source": {
+							"table": "contacts"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "contacts"
+						}
+					},
+					{
+						"source": {
+							"table": "contexttype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "contexttype"
+						}
+					},
+					{
+						"source": {
+							"table": "countrymst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "countrymst"
+						}
+					},
+					{
+						"source": {
+							"table": "county"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "county"
+						}
+					},
+					{
+						"source": {
+							"table": "cptdata"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cptdata"
+						}
+					},
+					{
+						"source": {
+							"table": "cust_item"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cust_item"
+						}
+					},
+					{
+						"source": {
+							"table": "custaddr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "custaddr"
+						}
+					},
+					{
+						"source": {
+							"table": "custmast"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "custmast"
+						}
+					},
+					{
+						"source": {
+							"table": "custmast_attributes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "custmast_attributes"
+						}
+					},
+					{
+						"source": {
+							"table": "custmast_audit_reject"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "custmast_audit_reject"
+						}
+					},
+					{
+						"source": {
+							"table": "custmast_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "custmast_status"
+						}
+					},
+					{
+						"source": {
+							"table": "custmast_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "custmast_types"
+						}
+					},
+					{
+						"source": {
+							"table": "customdatafields"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customdatafields"
+						}
+					},
+					{
+						"source": {
+							"table": "customdatavalues"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customdatavalues"
+						}
+					},
+					{
+						"source": {
+							"table": "customer_carrier"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customer_carrier"
+						}
+					},
+					{
+						"source": {
+							"table": "customer_inventory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customer_inventory"
+						}
+					},
+					{
+						"source": {
+							"table": "customer_inventory_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customer_inventory_history"
+						}
+					},
+					{
+						"source": {
+							"table": "customercontacts"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customercontacts"
+						}
+					},
+					{
+						"source": {
+							"table": "customercontacttypes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customercontacttypes"
+						}
+					},
+					{
+						"source": {
+							"table": "customerimage"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customerimage"
+						}
+					},
+					{
+						"source": {
+							"table": "customerminimum"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customerminimum"
+						}
+					},
+					{
+						"source": {
+							"table": "customernotes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "customernotes"
+						}
+					},
+					{
+						"source": {
+							"table": "custprogram"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "custprogram"
+						}
+					},
+					{
+						"source": {
+							"table": "cvxitem"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cvxitem"
+						}
+					},
+					{
+						"source": {
+							"table": "cycle_cnt"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cycle_cnt"
+						}
+					},
+					{
+						"source": {
+							"table": "cycle_numbers"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "cycle_numbers"
+						}
+					},
+					{
+						"source": {
+							"table": "default_values"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "default_values"
+						}
+					},
+					{
+						"source": {
+							"table": "depmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "depmst"
+						}
+					},
+					{
+						"source": {
+							"table": "depmst_lane"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "depmst_lane"
+						}
+					},
+					{
+						"source": {
+							"table": "dept_zone"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "dept_zone"
+						}
+					},
+					{
+						"source": {
+							"table": "disability"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "disability"
+						}
+					},
+					{
+						"source": {
+							"table": "disposition_level"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "disposition_level"
+						}
+					},
+					{
+						"source": {
+							"table": "disposition_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "disposition_type"
+						}
+					},
+					{
+						"source": {
+							"table": "dockmstr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "dockmstr"
+						}
+					},
+					{
+						"source": {
+							"table": "Documentation"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "Documentation"
+						}
+					},
+					{
+						"source": {
+							"table": "DocumentLibrary"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "DocumentLibrary"
+						}
+					},
+					{
+						"source": {
+							"table": "documents"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "documents"
+						}
+					},
+					{
+						"source": {
+							"table": "DynaControlFieldList"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "DynaControlFieldList"
+						}
+					},
+					{
+						"source": {
+							"table": "DynaControlFilterElement"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "DynaControlFilterElement"
+						}
+					},
+					{
+						"source": {
+							"table": "DynaControlTemlate"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "DynaControlTemlate"
+						}
+					},
+					{
+						"source": {
+							"table": "DynaControlVisibility"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "DynaControlVisibility"
+						}
+					},
+					{
+						"source": {
+							"table": "DynaPageTemplate"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "DynaPageTemplate"
+						}
+					},
+					{
+						"source": {
+							"table": "email_templates"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "email_templates"
+						}
+					},
+					{
+						"source": {
+							"table": "email_transactions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "email_transactions"
+						}
+					},
+					{
+						"source": {
+							"table": "email_transactions_import"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "email_transactions_import"
+						}
+					},
+					{
+						"source": {
+							"table": "email_trigger"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "email_trigger"
+						}
+					},
+					{
+						"source": {
+							"table": "email_trigger_filter"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "email_trigger_filter"
+						}
+					},
+					{
+						"source": {
+							"table": "emailupdcdc2"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "emailupdcdc2"
+						}
+					},
+					{
+						"source": {
+							"table": "empallowedhr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empallowedhr"
+						}
+					},
+					{
+						"source": {
+							"table": "empappointment"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empappointment"
+						}
+					},
+					{
+						"source": {
+							"table": "empcredentials"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empcredentials"
+						}
+					},
+					{
+						"source": {
+							"table": "empmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empmst"
+						}
+					},
+					{
+						"source": {
+							"table": "empmst_access"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empmst_access"
+						}
+					},
+					{
+						"source": {
+							"table": "empmst_customer"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empmst_customer"
+						}
+					},
+					{
+						"source": {
+							"table": "empmst_pod_event"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empmst_pod_event"
+						}
+					},
+					{
+						"source": {
+							"table": "empmst_program"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empmst_program"
+						}
+					},
+					{
+						"source": {
+							"table": "empmst_quicklink"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empmst_quicklink"
+						}
+					},
+					{
+						"source": {
+							"table": "emppswdhistory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "emppswdhistory"
+						}
+					},
+					{
+						"source": {
+							"table": "empregion"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empregion"
+						}
+					},
+					{
+						"source": {
+							"table": "empsecurityanswer"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "empsecurityanswer"
+						}
+					},
+					{
+						"source": {
+							"table": "emptype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "emptype"
+						}
+					},
+					{
+						"source": {
+							"table": "emptypemenu"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "emptypemenu"
+						}
+					},
+					{
+						"source": {
+							"table": "end_of_day"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "end_of_day"
+						}
+					},
+					{
+						"source": {
+							"table": "err_msg"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "err_msg"
+						}
+					},
+					{
+						"source": {
+							"table": "ethnicities"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ethnicities"
+						}
+					},
+					{
+						"source": {
+							"table": "eventcategory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "eventcategory"
+						}
+					},
+					{
+						"source": {
+							"table": "eventcontacts"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "eventcontacts"
+						}
+					},
+					{
+						"source": {
+							"table": "eventdckr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "eventdckr"
+						}
+					},
+					{
+						"source": {
+							"table": "eventdocuments"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "eventdocuments"
+						}
+					},
+					{
+						"source": {
+							"table": "eventnotes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "eventnotes"
+						}
+					},
+					{
+						"source": {
+							"table": "eventrequisition"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "eventrequisition"
+						}
+					},
+					{
+						"source": {
+							"table": "eventtype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "eventtype"
+						}
+					},
+					{
+						"source": {
+							"table": "exposure_risk"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "exposure_risk"
+						}
+					},
+					{
+						"source": {
+							"table": "eye_colors"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "eye_colors"
+						}
+					},
+					{
+						"source": {
+							"table": "file_retent"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "file_retent"
+						}
+					},
+					{
+						"source": {
+							"table": "freight_class"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "freight_class"
+						}
+					},
+					{
+						"source": {
+							"table": "gcnseqno"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "gcnseqno"
+						}
+					},
+					{
+						"source": {
+							"table": "gcnseqnoahfs"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "gcnseqnoahfs"
+						}
+					},
+					{
+						"source": {
+							"table": "gcs_eye"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "gcs_eye"
+						}
+					},
+					{
+						"source": {
+							"table": "gcs_motor"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "gcs_motor"
+						}
+					},
+					{
+						"source": {
+							"table": "gcs_score"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "gcs_score"
+						}
+					},
+					{
+						"source": {
+							"table": "gcs_verbal"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "gcs_verbal"
+						}
+					},
+					{
+						"source": {
+							"table": "genders"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "genders"
+						}
+					},
+					{
+						"source": {
+							"table": "Grade"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "Grade"
+						}
+					},
+					{
+						"source": {
+							"table": "gsm_server_context"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "gsm_server_context"
+						}
+					},
+					{
+						"source": {
+							"table": "hair_colors"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "hair_colors"
+						}
+					},
+					{
+						"source": {
+							"table": "hic"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "hic"
+						}
+					},
+					{
+						"source": {
+							"table": "hook"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "hook"
+						}
+					},
+					{
+						"source": {
+							"table": "host"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "host"
+						}
+					},
+					{
+						"source": {
+							"table": "icd9data"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "icd9data"
+						}
+					},
+					{
+						"source": {
+							"table": "identification_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "identification_types"
+						}
+					},
+					{
+						"source": {
+							"table": "IMAGE_MAPPINGS"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "IMAGE_MAPPINGS"
+						}
+					},
+					{
+						"source": {
+							"table": "imatsrequestdetail"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "imatsrequestdetail"
+						}
+					},
+					{
+						"source": {
+							"table": "imatsrequestheader"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "imatsrequestheader"
+						}
+					},
+					{
+						"source": {
+							"table": "imatsresponsedetail"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "imatsresponsedetail"
+						}
+					},
+					{
+						"source": {
+							"table": "imatsresponseheader"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "imatsresponseheader"
+						}
+					},
+					{
+						"source": {
+							"table": "immunizations"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "immunizations"
+						}
+					},
+					{
+						"source": {
+							"table": "immunschedule"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "immunschedule"
+						}
+					},
+					{
+						"source": {
+							"table": "ingestion_locations"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ingestion_locations"
+						}
+					},
+					{
+						"source": {
+							"table": "ingestion_methods"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ingestion_methods"
+						}
+					},
+					{
+						"source": {
+							"table": "inv_adj"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "inv_adj"
+						}
+					},
+					{
+						"source": {
+							"table": "inv_prob"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "inv_prob"
+						}
+					},
+					{
+						"source": {
+							"table": "inv_substatus"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "inv_substatus"
+						}
+					},
+					{
+						"source": {
+							"table": "inventory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "inventory"
+						}
+					},
+					{
+						"source": {
+							"table": "inventory_distributions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "inventory_distributions"
+						}
+					},
+					{
+						"source": {
+							"table": "inventory_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "inventory_history"
+						}
+					},
+					{
+						"source": {
+							"table": "inventory_items"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "inventory_items"
+						}
+					},
+					{
+						"source": {
+							"table": "inventorysubdetail"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "inventorysubdetail"
+						}
+					},
+					{
+						"source": {
+							"table": "invoice_detail"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "invoice_detail"
+						}
+					},
+					{
+						"source": {
+							"table": "invoice_header"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "invoice_header"
+						}
+					},
+					{
+						"source": {
+							"table": "ipawsaddresses"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ipawsaddresses"
+						}
+					},
+					{
+						"source": {
+							"table": "ipawsconfidentiality"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ipawsconfidentiality"
+						}
+					},
+					{
+						"source": {
+							"table": "ipawsdefaults"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ipawsdefaults"
+						}
+					},
+					{
+						"source": {
+							"table": "ipawsdistributionstatus"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ipawsdistributionstatus"
+						}
+					},
+					{
+						"source": {
+							"table": "ipawsdistributiontypes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ipawsdistributiontypes"
+						}
+					},
+					{
+						"source": {
+							"table": "ipawsheader"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ipawsheader"
+						}
+					},
+					{
+						"source": {
+							"table": "ipawsmessagetype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ipawsmessagetype"
+						}
+					},
+					{
+						"source": {
+							"table": "item"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item"
+						}
+					},
+					{
+						"source": {
+							"table": "item_alloc"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_alloc"
+						}
+					},
+					{
+						"source": {
+							"table": "item_alloc_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_alloc_type"
+						}
+					},
+					{
+						"source": {
+							"table": "item_combinations"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_combinations"
+						}
+					},
+					{
+						"source": {
+							"table": "item_group"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_group"
+						}
+					},
+					{
+						"source": {
+							"table": "item_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_history"
+						}
+					},
+					{
+						"source": {
+							"table": "item_plan"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_plan"
+						}
+					},
+					{
+						"source": {
+							"table": "item_serial_label"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_serial_label"
+						}
+					},
+					{
+						"source": {
+							"table": "item_substitution"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_substitution"
+						}
+					},
+					{
+						"source": {
+							"table": "item_uomconversion"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "item_uomconversion"
+						}
+					},
+					{
+						"source": {
+							"table": "itemrouting"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "itemrouting"
+						}
+					},
+					{
+						"source": {
+							"table": "itmqaprc"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "itmqaprc"
+						}
+					},
+					{
+						"source": {
+							"table": "kitdtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "kitdtl"
+						}
+					},
+					{
+						"source": {
+							"table": "kitmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "kitmst"
+						}
+					},
+					{
+						"source": {
+							"table": "lab_order_dtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "lab_order_dtl"
+						}
+					},
+					{
+						"source": {
+							"table": "lab_order_hdr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "lab_order_hdr"
+						}
+					},
+					{
+						"source": {
+							"table": "lab_result_codes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "lab_result_codes"
+						}
+					},
+					{
+						"source": {
+							"table": "lab_test_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "lab_test_type"
+						}
+					},
+					{
+						"source": {
+							"table": "lab_tests"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "lab_tests"
+						}
+					},
+					{
+						"source": {
+							"table": "laboratory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "laboratory"
+						}
+					},
+					{
+						"source": {
+							"table": "labspecimen"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "labspecimen"
+						}
+					},
+					{
+						"source": {
+							"table": "labsreason"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "labsreason"
+						}
+					},
+					{
+						"source": {
+							"table": "labstype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "labstype"
+						}
+					},
+					{
+						"source": {
+							"table": "labtests"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "labtests"
+						}
+					},
+					{
+						"source": {
+							"table": "labtestslaboratory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "labtestslaboratory"
+						}
+					},
+					{
+						"source": {
+							"table": "labtestsspecimensource"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "labtestsspecimensource"
+						}
+					},
+					{
+						"source": {
+							"table": "labtestsspecimentype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "labtestsspecimentype"
+						}
+					},
+					{
+						"source": {
+							"table": "labtesttype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "labtesttype"
+						}
+					},
+					{
+						"source": {
+							"table": "lane"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "lane"
+						}
+					},
+					{
+						"source": {
+							"table": "languagecodes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "languagecodes"
+						}
+					},
+					{
+						"source": {
+							"table": "level_of_responsivenesses"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "level_of_responsivenesses"
+						}
+					},
+					{
+						"source": {
+							"table": "level_of_services"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "level_of_services"
+						}
+					},
+					{
+						"source": {
+							"table": "licensure_levels"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "licensure_levels"
+						}
+					},
+					{
+						"source": {
+							"table": "LivingSituation"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "LivingSituation"
+						}
+					},
+					{
+						"source": {
+							"table": "loaddtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "loaddtl"
+						}
+					},
+					{
+						"source": {
+							"table": "loadhdr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "loadhdr"
+						}
+					},
+					{
+						"source": {
+							"table": "location_definition"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "location_definition"
+						}
+					},
+					{
+						"source": {
+							"table": "location_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "location_types"
+						}
+					},
+					{
+						"source": {
+							"table": "loincdata"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "loincdata"
+						}
+					},
+					{
+						"source": {
+							"table": "lotnumber"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "lotnumber"
+						}
+					},
+					{
+						"source": {
+							"table": "machine"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "machine"
+						}
+					},
+					{
+						"source": {
+							"table": "maintenance_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "maintenance_history"
+						}
+					},
+					{
+						"source": {
+							"table": "maintenance_item"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "maintenance_item"
+						}
+					},
+					{
+						"source": {
+							"table": "maintenance_schedule"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "maintenance_schedule"
+						}
+					},
+					{
+						"source": {
+							"table": "maintenance_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "maintenance_type"
+						}
+					},
+					{
+						"source": {
+							"table": "manufacturer"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "manufacturer"
+						}
+					},
+					{
+						"source": {
+							"table": "medical_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "medical_history"
+						}
+					},
+					{
+						"source": {
+							"table": "medical_procedures"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "medical_procedures"
+						}
+					},
+					{
+						"source": {
+							"table": "medications"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "medications"
+						}
+					},
+					{
+						"source": {
+							"table": "menufile"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "menufile"
+						}
+					},
+					{
+						"source": {
+							"table": "messagemanager"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "messagemanager"
+						}
+					},
+					{
+						"source": {
+							"table": "Missing_PIN_TVFC"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "Missing_PIN_TVFC"
+						}
+					},
+					{
+						"source": {
+							"table": "movemst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "movemst"
+						}
+					},
+					{
+						"source": {
+							"table": "msg_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "msg_status"
+						}
+					},
+					{
+						"source": {
+							"table": "ndc_price"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ndc_price"
+						}
+					},
+					{
+						"source": {
+							"table": "ndcitemnumber"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ndcitemnumber"
+						}
+					},
+					{
+						"source": {
+							"table": "News"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "News"
+						}
+					},
+					{
+						"source": {
+							"table": "nimscapabilites"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "nimscapabilites"
+						}
+					},
+					{
+						"source": {
+							"table": "nimsclassification"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "nimsclassification"
+						}
+					},
+					{
+						"source": {
+							"table": "nimscontactheirarchy"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "nimscontactheirarchy"
+						}
+					},
+					{
+						"source": {
+							"table": "nimscontacts"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "nimscontacts"
+						}
+					},
+					{
+						"source": {
+							"table": "nimsresourcedckr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "nimsresourcedckr"
+						}
+					},
+					{
+						"source": {
+							"table": "nimsresourcedckrcapability"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "nimsresourcedckrcapability"
+						}
+					},
+					{
+						"source": {
+							"table": "nimsresourcedefinition"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "nimsresourcedefinition"
+						}
+					},
+					{
+						"source": {
+							"table": "nimsresourceitem"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "nimsresourceitem"
+						}
+					},
+					{
+						"source": {
+							"table": "note"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "note"
+						}
+					},
+					{
+						"source": {
+							"table": "Numbers"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "Numbers"
+						}
+					},
+					{
+						"source": {
+							"table": "objectsecurity"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "objectsecurity"
+						}
+					},
+					{
+						"source": {
+							"table": "objecttype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "objecttype"
+						}
+					},
+					{
+						"source": {
+							"table": "orange_book"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "orange_book"
+						}
+					},
+					{
+						"source": {
+							"table": "orddtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "orddtl"
+						}
+					},
+					{
+						"source": {
+							"table": "orddtl_place_orders"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "orddtl_place_orders"
+						}
+					},
+					{
+						"source": {
+							"table": "orddtl_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "orddtl_status"
+						}
+					},
+					{
+						"source": {
+							"table": "order_class"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "order_class"
+						}
+					},
+					{
+						"source": {
+							"table": "order_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "order_type"
+						}
+					},
+					{
+						"source": {
+							"table": "ordhdr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ordhdr"
+						}
+					},
+					{
+						"source": {
+							"table": "ordhdr_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ordhdr_status"
+						}
+					},
+					{
+						"source": {
+							"table": "ordoption"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ordoption"
+						}
+					},
+					{
+						"source": {
+							"table": "organizational_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "organizational_status"
+						}
+					},
+					{
+						"source": {
+							"table": "organizational_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "organizational_types"
+						}
+					},
+					{
+						"source": {
+							"table": "package_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "package_type"
+						}
+					},
+					{
+						"source": {
+							"table": "palletdet"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "palletdet"
+						}
+					},
+					{
+						"source": {
+							"table": "palletmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "palletmst"
+						}
+					},
+					{
+						"source": {
+							"table": "parameters"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "parameters"
+						}
+					},
+					{
+						"source": {
+							"table": "parcel_rate"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "parcel_rate"
+						}
+					},
+					{
+						"source": {
+							"table": "parcel_value"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "parcel_value"
+						}
+					},
+					{
+						"source": {
+							"table": "parcel_zip"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "parcel_zip"
+						}
+					},
+					{
+						"source": {
+							"table": "parcel_zone"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "parcel_zone"
+						}
+					},
+					{
+						"source": {
+							"table": "ParentChildPageRelationship"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ParentChildPageRelationship"
+						}
+					},
+					{
+						"source": {
+							"table": "physicians"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "physicians"
+						}
+					},
+					{
+						"source": {
+							"table": "pick"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pick"
+						}
+					},
+					{
+						"source": {
+							"table": "pickedregion"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pickedregion"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_cand_con_medical"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_cand_con_medical"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_cand_cons_complaints"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_cand_cons_complaints"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_cand_guarantor_employer"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_cand_guarantor_employer"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_allergy"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_allergy"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_allergy_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_allergy_history"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_consultation"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_consultation"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_department"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_department"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_docs"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_docs"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_events"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_events"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_functional_needs"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_functional_needs"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_functional_needs_allergy"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_functional_needs_allergy"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_functional_needs_registry"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_functional_needs_registry"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_functional_needs_resolutions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_functional_needs_resolutions"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_immunization"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_immunization"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_insurance"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_insurance"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_med_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_med_history"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_medication"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_medication"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_medication_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_medication_history"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_notes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_notes"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_patientids"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_patientids"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_personal_effects"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_personal_effects"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_physicians"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_physicians"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_profiles"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_profiles"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_profiles_supplement"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_profiles_supplement"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_relations"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_relations"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_resolutions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_resolutions"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_special_needs"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_special_needs"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_status"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_candidate_symptom"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_candidate_symptom"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_event_locations"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_event_locations"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_event_relatedids"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_event_relatedids"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_event_requirements"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_event_requirements"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_event_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_event_types"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_events"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_events"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_severity_levels"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_severity_levels"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_trans_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_trans_types"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_transactions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_transactions"
+						}
+					},
+					{
+						"source": {
+							"table": "pod_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pod_types"
+						}
+					},
+					{
+						"source": {
+							"table": "PODCandidateMessage"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "PODCandidateMessage"
+						}
+					},
+					{
+						"source": {
+							"table": "PODCandidateMessageStatus"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "PODCandidateMessageStatus"
+						}
+					},
+					{
+						"source": {
+							"table": "podet"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "podet"
+						}
+					},
+					{
+						"source": {
+							"table": "podstatus"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "podstatus"
+						}
+					},
+					{
+						"source": {
+							"table": "pomst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pomst"
+						}
+					},
+					{
+						"source": {
+							"table": "pool"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pool"
+						}
+					},
+					{
+						"source": {
+							"table": "pool_item"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pool_item"
+						}
+					},
+					{
+						"source": {
+							"table": "poolprogram"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "poolprogram"
+						}
+					},
+					{
+						"source": {
+							"table": "primary_impression"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "primary_impression"
+						}
+					},
+					{
+						"source": {
+							"table": "print_form"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "print_form"
+						}
+					},
+					{
+						"source": {
+							"table": "printlabel"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "printlabel"
+						}
+					},
+					{
+						"source": {
+							"table": "printmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "printmst"
+						}
+					},
+					{
+						"source": {
+							"table": "printmst_zone"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "printmst_zone"
+						}
+					},
+					{
+						"source": {
+							"table": "printoptions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "printoptions"
+						}
+					},
+					{
+						"source": {
+							"table": "priority_group"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "priority_group"
+						}
+					},
+					{
+						"source": {
+							"table": "priority_group_item"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "priority_group_item"
+						}
+					},
+					{
+						"source": {
+							"table": "Prioritygroups_Andre"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "Prioritygroups_Andre"
+						}
+					},
+					{
+						"source": {
+							"table": "prod_stg_dtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "prod_stg_dtl"
+						}
+					},
+					{
+						"source": {
+							"table": "prod_stg_mst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "prod_stg_mst"
+						}
+					},
+					{
+						"source": {
+							"table": "prodgrploctype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "prodgrploctype"
+						}
+					},
+					{
+						"source": {
+							"table": "product_dosages"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "product_dosages"
+						}
+					},
+					{
+						"source": {
+							"table": "product_form_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "product_form_types"
+						}
+					},
+					{
+						"source": {
+							"table": "product_forms"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "product_forms"
+						}
+					},
+					{
+						"source": {
+							"table": "products"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "products"
+						}
+					},
+					{
+						"source": {
+							"table": "program"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "program"
+						}
+					},
+					{
+						"source": {
+							"table": "programhistory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "programhistory"
+						}
+					},
+					{
+						"source": {
+							"table": "programtransaction"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "programtransaction"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_administered_group_item"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_administered_group_item"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_administered_groups"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_administered_groups"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_administered_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_administered_history"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_administered_warnings"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_administered_warnings"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_corrective_action"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_corrective_action"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_item_choice"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_item_choice"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_item_choice_bkp_20210430"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_item_choice_bkp_20210430"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_priority_allocation"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_priority_allocation"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_priority_groups"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_priority_groups"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_project_codes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_project_codes"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_reconciliation_reasons"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_reconciliation_reasons"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_reject_reason"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_reject_reason"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_stock_level"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_stock_level"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_stock_level_backup_10292021"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_stock_level_backup_10292021"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_temperatures"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_temperatures"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_tof"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_tof"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_transfer_reasons"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_transfer_reasons"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_wasted_checks"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_wasted_checks"
+						}
+					},
+					{
+						"source": {
+							"table": "provider_wasted_reasons"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provider_wasted_reasons"
+						}
+					},
+					{
+						"source": {
+							"table": "providerprofile"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "providerprofile"
+						}
+					},
+					{
+						"source": {
+							"table": "provupdcdc"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "provupdcdc"
+						}
+					},
+					{
+						"source": {
+							"table": "proxydefinition"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "proxydefinition"
+						}
+					},
+					{
+						"source": {
+							"table": "pulse_rhythms"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "pulse_rhythms"
+						}
+					},
+					{
+						"source": {
+							"table": "qagroup"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "qagroup"
+						}
+					},
+					{
+						"source": {
+							"table": "qahistory"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "qahistory"
+						}
+					},
+					{
+						"source": {
+							"table": "qaprocess"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "qaprocess"
+						}
+					},
+					{
+						"source": {
+							"table": "qarank"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "qarank"
+						}
+					},
+					{
+						"source": {
+							"table": "qaresults"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "qaresults"
+						}
+					},
+					{
+						"source": {
+							"table": "qatype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "qatype"
+						}
+					},
+					{
+						"source": {
+							"table": "questionnaire_answers"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "questionnaire_answers"
+						}
+					},
+					{
+						"source": {
+							"table": "questionnaire_dosages"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "questionnaire_dosages"
+						}
+					},
+					{
+						"source": {
+							"table": "questionnaire_questions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "questionnaire_questions"
+						}
+					},
+					{
+						"source": {
+							"table": "questionnaires"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "questionnaires"
+						}
+					},
+					{
+						"source": {
+							"table": "questionnnaire_resolutions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "questionnnaire_resolutions"
+						}
+					},
+					{
+						"source": {
+							"table": "race"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "race"
+						}
+					},
+					{
+						"source": {
+							"table": "rate"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rate"
+						}
+					},
+					{
+						"source": {
+							"table": "region"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "region"
+						}
+					},
+					{
+						"source": {
+							"table": "relationships"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "relationships"
+						}
+					},
+					{
+						"source": {
+							"table": "religion"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "religion"
+						}
+					},
+					{
+						"source": {
+							"table": "report"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "report"
+						}
+					},
+					{
+						"source": {
+							"table": "report_rate"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "report_rate"
+						}
+					},
+					{
+						"source": {
+							"table": "requisitiondtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "requisitiondtl"
+						}
+					},
+					{
+						"source": {
+							"table": "requisitionhdr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "requisitionhdr"
+						}
+					},
+					{
+						"source": {
+							"table": "ResidenceType"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "ResidenceType"
+						}
+					},
+					{
+						"source": {
+							"table": "respitory_efforts"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "respitory_efforts"
+						}
+					},
+					{
+						"source": {
+							"table": "return_action"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "return_action"
+						}
+					},
+					{
+						"source": {
+							"table": "return_category"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "return_category"
+						}
+					},
+					{
+						"source": {
+							"table": "return_reason"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "return_reason"
+						}
+					},
+					{
+						"source": {
+							"table": "route_customer"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "route_customer"
+						}
+					},
+					{
+						"source": {
+							"table": "route_zip"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "route_zip"
+						}
+					},
+					{
+						"source": {
+							"table": "routemst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "routemst"
+						}
+					},
+					{
+						"source": {
+							"table": "rpt_args"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rpt_args"
+						}
+					},
+					{
+						"source": {
+							"table": "rpt_col_dtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rpt_col_dtl"
+						}
+					},
+					{
+						"source": {
+							"table": "rptdet"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rptdet"
+						}
+					},
+					{
+						"source": {
+							"table": "rptmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rptmst"
+						}
+					},
+					{
+						"source": {
+							"table": "rptsch"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rptsch"
+						}
+					},
+					{
+						"source": {
+							"table": "rt_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rt_type"
+						}
+					},
+					{
+						"source": {
+							"table": "rtdet"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rtdet"
+						}
+					},
+					{
+						"source": {
+							"table": "rtdet_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rtdet_status"
+						}
+					},
+					{
+						"source": {
+							"table": "rtmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rtmst"
+						}
+					},
+					{
+						"source": {
+							"table": "rtmst_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rtmst_status"
+						}
+					},
+					{
+						"source": {
+							"table": "rtn_ctn_det"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rtn_ctn_det"
+						}
+					},
+					{
+						"source": {
+							"table": "rtn_ctn_mst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "rtn_ctn_mst"
+						}
+					},
+					{
+						"source": {
+							"table": "scan_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scan_types"
+						}
+					},
+					{
+						"source": {
+							"table": "scandetail"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scandetail"
+						}
+					},
+					{
+						"source": {
+							"table": "scanheader"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scanheader"
+						}
+					},
+					{
+						"source": {
+							"table": "scans"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scans"
+						}
+					},
+					{
+						"source": {
+							"table": "scheduled_email"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scheduled_email"
+						}
+					},
+					{
+						"source": {
+							"table": "scheduled_email_message"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scheduled_email_message"
+						}
+					},
+					{
+						"source": {
+							"table": "scheduled_filter"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scheduled_filter"
+						}
+					},
+					{
+						"source": {
+							"table": "scheduled_report"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scheduled_report"
+						}
+					},
+					{
+						"source": {
+							"table": "scheduled_tasks"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "scheduled_tasks"
+						}
+					},
+					{
+						"source": {
+							"table": "School"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "School"
+						}
+					},
+					{
+						"source": {
+							"table": "security_level"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "security_level"
+						}
+					},
+					{
+						"source": {
+							"table": "securitygroup"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "securitygroup"
+						}
+					},
+					{
+						"source": {
+							"table": "securityquestions"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "securityquestions"
+						}
+					},
+					{
+						"source": {
+							"table": "serial"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "serial"
+						}
+					},
+					{
+						"source": {
+							"table": "serial_history"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "serial_history"
+						}
+					},
+					{
+						"source": {
+							"table": "serial_pick"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "serial_pick"
+						}
+					},
+					{
+						"source": {
+							"table": "servicetypes"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "servicetypes"
+						}
+					},
+					{
+						"source": {
+							"table": "severity"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "severity"
+						}
+					},
+					{
+						"source": {
+							"table": "severity_field"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "severity_field"
+						}
+					},
+					{
+						"source": {
+							"table": "shfmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "shfmst"
+						}
+					},
+					{
+						"source": {
+							"table": "shpdtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "shpdtl"
+						}
+					},
+					{
+						"source": {
+							"table": "shpmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "shpmst"
+						}
+					},
+					{
+						"source": {
+							"table": "smallprovider"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "smallprovider"
+						}
+					},
+					{
+						"source": {
+							"table": "special_needs"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "special_needs"
+						}
+					},
+					{
+						"source": {
+							"table": "special_needs_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "special_needs_types"
+						}
+					},
+					{
+						"source": {
+							"table": "specimensource"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "specimensource"
+						}
+					},
+					{
+						"source": {
+							"table": "specimentype"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "specimentype"
+						}
+					},
+					{
+						"source": {
+							"table": "SQLEMAILSTRINGS"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "SQLEMAILSTRINGS"
+						}
+					},
+					{
+						"source": {
+							"table": "standard_directives"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "standard_directives"
+						}
+					},
+					{
+						"source": {
+							"table": "states"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "states"
+						}
+					},
+					{
+						"source": {
+							"table": "stntbl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "stntbl"
+						}
+					},
+					{
+						"source": {
+							"table": "stroke_scales"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "stroke_scales"
+						}
+					},
+					{
+						"source": {
+							"table": "subregion"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "subregion"
+						}
+					},
+					{
+						"source": {
+							"table": "suggested_movement"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "suggested_movement"
+						}
+					},
+					{
+						"source": {
+							"table": "summary_activity"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "summary_activity"
+						}
+					},
+					{
+						"source": {
+							"table": "summary_cyclecount"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "summary_cyclecount"
+						}
+					},
+					{
+						"source": {
+							"table": "symptom"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "symptom"
+						}
+					},
+					{
+						"source": {
+							"table": "sysdiagrams"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "sysdiagrams"
+						}
+					},
+					{
+						"source": {
+							"table": "syspar_def"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "syspar_def"
+						}
+					},
+					{
+						"source": {
+							"table": "syspar_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "syspar_type"
+						}
+					},
+					{
+						"source": {
+							"table": "syspar_value"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "syspar_value"
+						}
+					},
+					{
+						"source": {
+							"table": "system_lock"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "system_lock"
+						}
+					},
+					{
+						"source": {
+							"table": "tagmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "tagmst"
+						}
+					},
+					{
+						"source": {
+							"table": "task"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "task"
+						}
+					},
+					{
+						"source": {
+							"table": "task_emp"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "task_emp"
+						}
+					},
+					{
+						"source": {
+							"table": "Teacher"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "Teacher"
+						}
+					},
+					{
+						"source": {
+							"table": "termofuse"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "termofuse"
+						}
+					},
+					{
+						"source": {
+							"table": "thrombolytics"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "thrombolytics"
+						}
+					},
+					{
+						"source": {
+							"table": "trans_type"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "trans_type"
+						}
+					},
+					{
+						"source": {
+							"table": "transport"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "transport"
+						}
+					},
+					{
+						"source": {
+							"table": "transportation_dtl"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "transportation_dtl"
+						}
+					},
+					{
+						"source": {
+							"table": "transportation_hdr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "transportation_hdr"
+						}
+					},
+					{
+						"source": {
+							"table": "triage_status"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "triage_status"
+						}
+					},
+					{
+						"source": {
+							"table": "truckmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "truckmst"
+						}
+					},
+					{
+						"source": {
+							"table": "unit_of_measures"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "unit_of_measures"
+						}
+					},
+					{
+						"source": {
+							"table": "uom"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "uom"
+						}
+					},
+					{
+						"source": {
+							"table": "uomconv"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "uomconv"
+						}
+					},
+					{
+						"source": {
+							"table": "user_string"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "user_string"
+						}
+					},
+					{
+						"source": {
+							"table": "usermenu"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "usermenu"
+						}
+					},
+					{
+						"source": {
+							"table": "users"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "users"
+						}
+					},
+					{
+						"source": {
+							"table": "vaccinedistribution"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vaccinedistribution"
+						}
+					},
+					{
+						"source": {
+							"table": "vaccinedistsumm"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vaccinedistsumm"
+						}
+					},
+					{
+						"source": {
+							"table": "vehicle_types"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vehicle_types"
+						}
+					},
+					{
+						"source": {
+							"table": "vehicle_units"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vehicle_units"
+						}
+					},
+					{
+						"source": {
+							"table": "vendaddr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vendaddr"
+						}
+					},
+					{
+						"source": {
+							"table": "venddetail"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "venddetail"
+						}
+					},
+					{
+						"source": {
+							"table": "venmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "venmst"
+						}
+					},
+					{
+						"source": {
+							"table": "vitals_pupils"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vitals_pupils"
+						}
+					},
+					{
+						"source": {
+							"table": "vitals_skin_capillary"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vitals_skin_capillary"
+						}
+					},
+					{
+						"source": {
+							"table": "vitals_skin_color"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vitals_skin_color"
+						}
+					},
+					{
+						"source": {
+							"table": "vitals_skin_moist"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vitals_skin_moist"
+						}
+					},
+					{
+						"source": {
+							"table": "vitals_skin_temperature"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vitals_skin_temperature"
+						}
+					},
+					{
+						"source": {
+							"table": "vitals_skin_turgor"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "vitals_skin_turgor"
+						}
+					},
+					{
+						"source": {
+							"table": "wave"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wave"
+						}
+					},
+					{
+						"source": {
+							"table": "web"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "web"
+						}
+					},
+					{
+						"source": {
+							"table": "webcontent"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "webcontent"
+						}
+					},
+					{
+						"source": {
+							"table": "webcontent2"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "webcontent2"
+						}
+					},
+					{
+						"source": {
+							"table": "weight_groups"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "weight_groups"
+						}
+					},
+					{
+						"source": {
+							"table": "wh_zone"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wh_zone"
+						}
+					},
+					{
+						"source": {
+							"table": "wh_zone_putaway"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wh_zone_putaway"
+						}
+					},
+					{
+						"source": {
+							"table": "whmst"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "whmst"
+						}
+					},
+					{
+						"source": {
+							"table": "whmst_email_configuration"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "whmst_email_configuration"
+						}
+					},
+					{
+						"source": {
+							"table": "wrk_Adult_Providers_08262021"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrk_Adult_Providers_08262021"
+						}
+					},
+					{
+						"source": {
+							"table": "wrk_AdultAndPediUpdateToPediOnly"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrk_AdultAndPediUpdateToPediOnly"
+						}
+					},
+					{
+						"source": {
+							"table": "wrk_MSL_Counts"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrk_MSL_Counts"
+						}
+					},
+					{
+						"source": {
+							"table": "wrk_MSL_Updates_Mstr"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrk_MSL_Updates_Mstr"
+						}
+					},
+					{
+						"source": {
+							"table": "wrk_November_MSL_10252021"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrk_November_MSL_10252021"
+						}
+					},
+					{
+						"source": {
+							"table": "wrk_PediOnlyUpdateToAdultAndPedi"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrk_PediOnlyUpdateToAdultAndPedi"
+						}
+					},
+					{
+						"source": {
+							"table": "wrk_ProviderMSLsToUpdate"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrk_ProviderMSLsToUpdate"
+						}
+					},
+					{
+						"source": {
+							"table": "wrk_Vaxelis_MSLs"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrk_Vaxelis_MSLs"
+						}
+					},
+					{
+						"source": {
+							"table": "wrkBatch1VaxelisChoiceUpdates_042021"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrkBatch1VaxelisChoiceUpdates_042021"
+						}
+					},
+					{
+						"source": {
+							"table": "wrkBatch2VaxelisChoiceUpdates_042021"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrkBatch2VaxelisChoiceUpdates_042021"
+						}
+					},
+					{
+						"source": {
+							"table": "wrkMissingChoiceUpdates_042021"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "wrkMissingChoiceUpdates_042021"
+						}
+					},
+					{
+						"source": {
+							"table": "zip_code"
+						},
+						"destination": {
+							"schema": "dbo",
+							"table": "zip_code"
+						}
+					}
+				]
+			}
+		},
+		"annotations": []
+	}
+}

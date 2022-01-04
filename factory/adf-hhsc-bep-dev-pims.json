@@ -1,0 +1,9 @@
+{
+	"name": "adf-hhsc-bep-dev-pims",
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f0f1e8d0-809a-4720-9710-98eec37f92a2",
+		"tenantId": "d9195e32-2066-44b9-8a39-1782bc281702"
+	}
+}

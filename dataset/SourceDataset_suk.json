@@ -1,0 +1,647 @@
+{
+	"name": "SourceDataset_suk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ITEAMS_TEST",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "co_num",
+				"type": "varchar"
+			},
+			{
+				"name": "wh_num",
+				"type": "varchar"
+			},
+			{
+				"name": "prod_grp",
+				"type": "varchar"
+			},
+			{
+				"name": "prod_line",
+				"type": "varchar"
+			},
+			{
+				"name": "prod_subline",
+				"type": "varchar"
+			},
+			{
+				"name": "rtn_category",
+				"type": "varchar"
+			},
+			{
+				"name": "abs_num",
+				"type": "varchar"
+			},
+			{
+				"name": "item_num",
+				"type": "varchar"
+			},
+			{
+				"name": "upc_num",
+				"type": "varchar"
+			},
+			{
+				"name": "nmfc_num",
+				"type": "varchar"
+			},
+			{
+				"name": "item_desc",
+				"type": "varchar"
+			},
+			{
+				"name": "item_sec_desc",
+				"type": "varchar"
+			},
+			{
+				"name": "item_long_desc",
+				"type": "varchar"
+			},
+			{
+				"name": "uom",
+				"type": "varchar"
+			},
+			{
+				"name": "box_qty",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "case_qty",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "pallet_qty",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "max_lvl",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "min_lvl",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "reo_qty",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "wh_zone",
+				"type": "varchar"
+			},
+			{
+				"name": "aisle",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "last_count",
+				"type": "varchar"
+			},
+			{
+				"name": "abc",
+				"type": "varchar"
+			},
+			{
+				"name": "item_type",
+				"type": "varchar"
+			},
+			{
+				"name": "pilferage_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "rot_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "gl_num",
+				"type": "varchar"
+			},
+			{
+				"name": "tracking_num",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "msds_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "serial_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "serial_by_location",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "serial_outbound",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "serial_inbound",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "lot_ctrl",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "pool_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "kit_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "shelf_life_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "shelf_life",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "length",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "height",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "width",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "cube",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "weight",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "dim_weight",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "ytd_cc_unit_var",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "ytd_cc_dollar_var",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "ytd_phy_unit_var",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "ytd_phy_dollar_var",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "item_cost",
+				"type": "decimal",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "sell_price",
+				"type": "decimal",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "acceptable_over",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "acceptable_over_amt",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "self_ship",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "qa_inspection",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "qa_instructions",
+				"type": "varchar"
+			},
+			{
+				"name": "customs_hold",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "drop_ship",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "force_ship",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "expiration_from",
+				"type": "varchar"
+			},
+			{
+				"name": "rcv_threshold",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "shp_threshold",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "unavailable_at",
+				"type": "varchar"
+			},
+			{
+				"name": "same_lot",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "freight_class",
+				"type": "varchar"
+			},
+			{
+				"name": "oversized",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "plt_block",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "plt_high",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "counter_zone",
+				"type": "varchar"
+			},
+			{
+				"name": "kit_build_zone",
+				"type": "varchar"
+			},
+			{
+				"name": "msds_sheet",
+				"type": "varchar"
+			},
+			{
+				"name": "msds_sheet_bin",
+				"type": "varchar"
+			},
+			{
+				"name": "msds_send_always",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "country_of_origin",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "reserve_qty",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "acceptable_fill_rate",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "cust_code",
+				"type": "varchar"
+			},
+			{
+				"name": "bo_qty",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "package_code",
+				"type": "varchar"
+			},
+			{
+				"name": "stack_height",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "owner",
+				"type": "varchar"
+			},
+			{
+				"name": "warantee_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "warantee_period",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "warantee_period_unit",
+				"type": "varchar"
+			},
+			{
+				"name": "warantee_card_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "warantee_card_sku",
+				"type": "varchar"
+			},
+			{
+				"name": "row_status",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "origin",
+				"type": "varchar"
+			},
+			{
+				"name": "image_name",
+				"type": "varchar"
+			},
+			{
+				"name": "hazardous",
+				"type": "varchar"
+			},
+			{
+				"name": "host_origin",
+				"type": "varchar"
+			},
+			{
+				"name": "email",
+				"type": "varchar"
+			},
+			{
+				"name": "guid",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 9
+			},
+			{
+				"name": "country_code",
+				"type": "varchar"
+			},
+			{
+				"name": "serial_type",
+				"type": "varchar"
+			},
+			{
+				"name": "msrp_value",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "harmonized_code",
+				"type": "varchar"
+			},
+			{
+				"name": "labelcode",
+				"type": "varchar"
+			},
+			{
+				"name": "gtin_number",
+				"type": "varchar"
+			},
+			{
+				"name": "maintenance_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "inbound_routing",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "outbound_routing",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "msrp_capture",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "qa_insp_cycle_type",
+				"type": "varchar"
+			},
+			{
+				"name": "qa_insp_cycle_amt",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "qa_sample_type",
+				"type": "varchar"
+			},
+			{
+				"name": "qa_hold_type",
+				"type": "varchar"
+			},
+			{
+				"name": "qa_sample_partial_type",
+				"type": "varchar"
+			},
+			{
+				"name": "qa_sample_partial_amt",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "packaging_flag",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "ndcid",
+				"type": "varchar"
+			},
+			{
+				"name": "dry_ice",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "security_code",
+				"type": "varchar"
+			},
+			{
+				"name": "epc_number",
+				"type": "varchar"
+			},
+			{
+				"name": "other_number1",
+				"type": "varchar"
+			},
+			{
+				"name": "other_number2",
+				"type": "varchar"
+			},
+			{
+				"name": "other_number3",
+				"type": "varchar"
+			},
+			{
+				"name": "ean_number",
+				"type": "varchar"
+			},
+			{
+				"name": "cvx_code",
+				"type": "varchar"
+			},
+			{
+				"name": "nims_class",
+				"type": "varchar"
+			},
+			{
+				"name": "nims_subclass",
+				"type": "varchar"
+			},
+			{
+				"name": "nims_sublineclass",
+				"type": "varchar"
+			},
+			{
+				"name": "resourcedefid",
+				"type": "varchar"
+			},
+			{
+				"name": "PROGRESS_RECID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "PROGRESS_RECID_IDENT_",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "controlled",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "substitution",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "direct_ship",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "capture_serial_range",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "order_price_cap",
+				"type": "decimal",
+				"precision": 17,
+				"scale": 2
+			},
+			{
+				"name": "portal_choose_item",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "portal_receiving_add_line_item",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "portal_order_item",
+				"type": "tinyint",
+				"precision": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "item"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

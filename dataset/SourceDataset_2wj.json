@@ -1,0 +1,17 @@
+{
+	"name": "SourceDataset_2wj",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ITEAMS_TEST",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "item"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

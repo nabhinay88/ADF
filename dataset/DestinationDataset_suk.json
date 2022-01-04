@@ -1,0 +1,17 @@
+{
+	"name": "DestinationDataset_suk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqlhhscbepdevpims",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "lz",
+			"table": "item_old"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

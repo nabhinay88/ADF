@@ -1,0 +1,12 @@
+{
+	"name": "DestinationDataset_2wj",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqlhhscbepdevpims",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable"
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

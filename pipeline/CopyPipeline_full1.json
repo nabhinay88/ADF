@@ -250,7 +250,7 @@
 							"table": "_SEQT_consent_form_number"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_consent_form_number"
 						}
 					},
@@ -259,7 +259,7 @@
 							"table": "_SEQT_contactid"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_contactid"
 						}
 					},
@@ -268,7 +268,7 @@
 							"table": "_SEQT_creditnumber"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_creditnumber"
 						}
 					},
@@ -277,7 +277,7 @@
 							"table": "_SEQT_custaddr_code"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_custaddr_code"
 						}
 					},
@@ -286,7 +286,7 @@
 							"table": "_SEQT_custmast_audit"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_custmast_audit"
 						}
 					},
@@ -295,7 +295,7 @@
 							"table": "_SEQT_custmast_code"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_custmast_code"
 						}
 					},
@@ -304,7 +304,7 @@
 							"table": "_SEQT_cycle_cnt_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_cycle_cnt_id"
 						}
 					},
@@ -313,7 +313,7 @@
 							"table": "_SEQT_email_template_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_email_template_id"
 						}
 					},
@@ -322,7 +322,7 @@
 							"table": "_SEQT_emailtrigger_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_emailtrigger_id"
 						}
 					},
@@ -331,7 +331,7 @@
 							"table": "_SEQT_encounterid"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_encounterid"
 						}
 					},
@@ -340,7 +340,7 @@
 							"table": "_SEQT_err_msg_code"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_err_msg_code"
 						}
 					},
@@ -349,7 +349,7 @@
 							"table": "_SEQT_fourwall_link"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_fourwall_link"
 						}
 					},
@@ -358,7 +358,7 @@
 							"table": "_SEQT_ifaces_1"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_ifaces_1"
 						}
 					},
@@ -367,7 +367,7 @@
 							"table": "_SEQT_ifaces_2"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_ifaces_2"
 						}
 					},
@@ -376,7 +376,7 @@
 							"table": "_SEQT_ifaces_3"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_ifaces_3"
 						}
 					},
@@ -385,7 +385,7 @@
 							"table": "_SEQT_ifaces_4"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_ifaces_4"
 						}
 					},
@@ -394,7 +394,7 @@
 							"table": "_SEQT_inv_prob_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_inv_prob_id"
 						}
 					},
@@ -403,7 +403,7 @@
 							"table": "_SEQT_inventory_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_inventory_id"
 						}
 					},
@@ -412,7 +412,7 @@
 							"table": "_SEQT_inventorysubdetail_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_inventorysubdetail_id"
 						}
 					},
@@ -421,7 +421,7 @@
 							"table": "_SEQT_invoicenumber"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_invoicenumber"
 						}
 					},
@@ -430,7 +430,7 @@
 							"table": "_SEQT_ipawsheadercode"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_ipawsheadercode"
 						}
 					},
@@ -439,7 +439,7 @@
 							"table": "_SEQT_item_alloc_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_item_alloc_id"
 						}
 					},
@@ -448,7 +448,7 @@
 							"table": "_SEQT_item_history_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_item_history_id"
 						}
 					},
@@ -457,7 +457,7 @@
 							"table": "_SEQT_kit_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_kit_id"
 						}
 					},
@@ -466,7 +466,7 @@
 							"table": "_SEQT_loadid"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_loadid"
 						}
 					},
@@ -475,7 +475,7 @@
 							"table": "_SEQT_lsb"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_lsb"
 						}
 					},
@@ -484,7 +484,7 @@
 							"table": "_SEQT_movemst_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_movemst_id"
 						}
 					},
@@ -493,7 +493,7 @@
 							"table": "_SEQT_msb"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_msb"
 						}
 					},
@@ -502,7 +502,7 @@
 							"table": "_SEQT_order_tag"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_order_tag"
 						}
 					},
@@ -511,7 +511,7 @@
 							"table": "_SEQT_ordhdr_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_ordhdr_id"
 						}
 					},
@@ -520,7 +520,7 @@
 							"table": "_SEQT_ordhdr_order"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_ordhdr_order"
 						}
 					},
@@ -529,7 +529,7 @@
 							"table": "_SEQT_pallet_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_pallet_id"
 						}
 					},
@@ -538,7 +538,7 @@
 							"table": "_SEQT_palletmst_pallet_num"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_palletmst_pallet_num"
 						}
 					},
@@ -547,7 +547,7 @@
 							"table": "_SEQT_patient_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_patient_id"
 						}
 					},
@@ -556,7 +556,7 @@
 							"table": "_SEQT_patientevent"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_patientevent"
 						}
 					},
@@ -565,7 +565,7 @@
 							"table": "_SEQT_pick_batch"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_pick_batch"
 						}
 					},
@@ -574,7 +574,7 @@
 							"table": "_SEQT_pick_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_pick_id"
 						}
 					},
@@ -583,7 +583,7 @@
 							"table": "_SEQT_pod_trans_num"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_pod_trans_num"
 						}
 					},
@@ -592,7 +592,7 @@
 							"table": "_SEQT_pomst_po_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_pomst_po_id"
 						}
 					},
@@ -601,7 +601,7 @@
 							"table": "_SEQT_print_pallet"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_print_pallet"
 						}
 					},
@@ -610,7 +610,7 @@
 							"table": "_SEQT_prod_stg_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_prod_stg_id"
 						}
 					},
@@ -619,7 +619,7 @@
 							"table": "_SEQT_progtransid"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_progtransid"
 						}
 					},
@@ -628,7 +628,7 @@
 							"table": "_SEQT_qa_release_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_qa_release_id"
 						}
 					},
@@ -637,7 +637,7 @@
 							"table": "_SEQT_qahistorylink"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_qahistorylink"
 						}
 					},
@@ -646,7 +646,7 @@
 							"table": "_SEQT_rate_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_rate_id"
 						}
 					},
@@ -655,7 +655,7 @@
 							"table": "_SEQT_replenishment_xref"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_replenishment_xref"
 						}
 					},
@@ -664,7 +664,7 @@
 							"table": "_SEQT_report_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_report_id"
 						}
 					},
@@ -673,7 +673,7 @@
 							"table": "_SEQT_reportid"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_reportid"
 						}
 					},
@@ -682,7 +682,7 @@
 							"table": "_SEQT_requisition_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_requisition_id"
 						}
 					},
@@ -691,7 +691,7 @@
 							"table": "_SEQT_rma_number"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_rma_number"
 						}
 					},
@@ -700,7 +700,7 @@
 							"table": "_SEQT_rtmst_rt_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_rtmst_rt_id"
 						}
 					},
@@ -709,7 +709,7 @@
 							"table": "_SEQT_rtmst_rt_num"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_rtmst_rt_num"
 						}
 					},
@@ -718,7 +718,7 @@
 							"table": "_SEQT_rtn_ctn_num"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_rtn_ctn_num"
 						}
 					},
@@ -727,7 +727,7 @@
 							"table": "_SEQT_scheduledtask_lower"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_scheduledtask_lower"
 						}
 					},
@@ -736,7 +736,7 @@
 							"table": "_SEQT_scheduledtask_upper"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_scheduledtask_upper"
 						}
 					},
@@ -745,7 +745,7 @@
 							"table": "_SEQT_seq_develop_4"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_seq_develop_4"
 						}
 					},
@@ -754,7 +754,7 @@
 							"table": "_SEQT_seq_develop_5"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_seq_develop_5"
 						}
 					},
@@ -763,7 +763,7 @@
 							"table": "_SEQT_seq_develop_6"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_seq_develop_6"
 						}
 					},
@@ -772,7 +772,7 @@
 							"table": "_SEQT_seq_develop_7"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_seq_develop_7"
 						}
 					},
@@ -781,7 +781,7 @@
 							"table": "_SEQT_serial_number"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_serial_number"
 						}
 					},
@@ -790,7 +790,7 @@
 							"table": "_SEQT_shpmst_manifest"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_shpmst_manifest"
 						}
 					},
@@ -799,7 +799,7 @@
 							"table": "_SEQT_skusku_link"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_skusku_link"
 						}
 					},
@@ -808,7 +808,7 @@
 							"table": "_SEQT_sug_movement_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_sug_movement_id"
 						}
 					},
@@ -817,7 +817,7 @@
 							"table": "_SEQT_task_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_task_id"
 						}
 					},
@@ -826,7 +826,7 @@
 							"table": "_SEQT_ticketnumber"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_ticketnumber"
 						}
 					},
@@ -835,7 +835,7 @@
 							"table": "_SEQT_transport_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_transport_id"
 						}
 					},
@@ -844,7 +844,7 @@
 							"table": "_SEQT_vendaddr_id"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_vendaddr_id"
 						}
 					},
@@ -853,7 +853,7 @@
 							"table": "_SEQT_webcontentid"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "_SEQT_webcontentid"
 						}
 					},
@@ -898,7 +898,7 @@
 							"table": "afflications"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "afflications"
 						}
 					},
@@ -907,7 +907,7 @@
 							"table": "age_groups"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "age_groups"
 						}
 					},
@@ -916,7 +916,7 @@
 							"table": "age_units"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "age_units"
 						}
 					},
@@ -925,7 +925,7 @@
 							"table": "agency"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "agency"
 						}
 					},
@@ -934,7 +934,7 @@
 							"table": "agency_types_of_services"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "agency_types_of_services"
 						}
 					},
@@ -943,7 +943,7 @@
 							"table": "ahfs"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ahfs"
 						}
 					},
@@ -952,7 +952,7 @@
 							"table": "alert_definition"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "alert_definition"
 						}
 					},
@@ -961,7 +961,7 @@
 							"table": "alert_employee"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "alert_employee"
 						}
 					},
@@ -970,7 +970,7 @@
 							"table": "alertinstance_employee"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "alertinstance_employee"
 						}
 					},
@@ -979,7 +979,7 @@
 							"table": "allergy"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "allergy"
 						}
 					},
@@ -988,7 +988,7 @@
 							"table": "allergy_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "allergy_types"
 						}
 					},
@@ -997,7 +997,7 @@
 							"table": "allowedinv"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "allowedinv"
 						}
 					},
@@ -1006,7 +1006,7 @@
 							"table": "Applications"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "Applications"
 						}
 					},
@@ -1015,7 +1015,7 @@
 							"table": "assessment_groups"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "assessment_groups"
 						}
 					},
@@ -1024,7 +1024,7 @@
 							"table": "ASSESSMENT_IMAGE_MAPPINGS"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ASSESSMENT_IMAGE_MAPPINGS"
 						}
 					},
@@ -1033,7 +1033,7 @@
 							"table": "assessment_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "assessment_types"
 						}
 					},
@@ -1042,7 +1042,7 @@
 							"table": "assessorial"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "assessorial"
 						}
 					},
@@ -1051,7 +1051,7 @@
 							"table": "assessorial_code"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "assessorial_code"
 						}
 					},
@@ -1060,7 +1060,7 @@
 							"table": "attributes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "attributes"
 						}
 					},
@@ -1069,7 +1069,7 @@
 							"table": "auditlog"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "auditlog"
 						}
 					},
@@ -1078,7 +1078,7 @@
 							"table": "auditlog_adjustment_checks"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "auditlog_adjustment_checks"
 						}
 					},
@@ -1087,7 +1087,7 @@
 							"table": "auditlog_adjustments"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "auditlog_adjustments"
 						}
 					},
@@ -1096,7 +1096,7 @@
 							"table": "auditlog_email"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "auditlog_email"
 						}
 					},
@@ -1105,7 +1105,7 @@
 							"table": "barcodedtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "barcodedtl"
 						}
 					},
@@ -1114,7 +1114,7 @@
 							"table": "barcodemst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "barcodemst"
 						}
 					},
@@ -1123,7 +1123,7 @@
 							"table": "billcategory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "billcategory"
 						}
 					},
@@ -1132,7 +1132,7 @@
 							"table": "billcode"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "billcode"
 						}
 					},
@@ -1141,7 +1141,7 @@
 							"table": "billcustmin"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "billcustmin"
 						}
 					},
@@ -1150,7 +1150,7 @@
 							"table": "billingperiod"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "billingperiod"
 						}
 					},
@@ -1159,7 +1159,7 @@
 							"table": "billrates"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "billrates"
 						}
 					},
@@ -1168,7 +1168,7 @@
 							"table": "bin_size"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "bin_size"
 						}
 					},
@@ -1177,7 +1177,7 @@
 							"table": "binmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "binmst"
 						}
 					},
@@ -1186,7 +1186,7 @@
 							"table": "bkmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "bkmst"
 						}
 					},
@@ -1195,7 +1195,7 @@
 							"table": "bm_tables"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "bm_tables"
 						}
 					},
@@ -1204,7 +1204,7 @@
 							"table": "business_rule"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "business_rule"
 						}
 					},
@@ -1213,7 +1213,7 @@
 							"table": "cache_detail"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cache_detail"
 						}
 					},
@@ -1222,7 +1222,7 @@
 							"table": "cache_header"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cache_header"
 						}
 					},
@@ -1231,7 +1231,7 @@
 							"table": "cardiac_rhythms"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cardiac_rhythms"
 						}
 					},
@@ -1240,7 +1240,7 @@
 							"table": "carrier"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "carrier"
 						}
 					},
@@ -1249,7 +1249,7 @@
 							"table": "carrier_rule"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "carrier_rule"
 						}
 					},
@@ -1258,7 +1258,7 @@
 							"table": "carrier_service"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "carrier_service"
 						}
 					},
@@ -1267,7 +1267,7 @@
 							"table": "carton_size"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "carton_size"
 						}
 					},
@@ -1276,7 +1276,7 @@
 							"table": "cartondtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cartondtl"
 						}
 					},
@@ -1285,7 +1285,7 @@
 							"table": "cartonmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cartonmst"
 						}
 					},
@@ -1294,7 +1294,7 @@
 							"table": "cartonopt"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cartonopt"
 						}
 					},
@@ -1303,7 +1303,7 @@
 							"table": "categorysetupicd9"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "categorysetupicd9"
 						}
 					},
@@ -1312,7 +1312,7 @@
 							"table": "categorysetuptesttype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "categorysetuptesttype"
 						}
 					},
@@ -1321,7 +1321,7 @@
 							"table": "cdcinventory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cdcinventory"
 						}
 					},
@@ -1330,7 +1330,7 @@
 							"table": "chief_complaints"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "chief_complaints"
 						}
 					},
@@ -1339,7 +1339,7 @@
 							"table": "cities"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cities"
 						}
 					},
@@ -1348,7 +1348,7 @@
 							"table": "cmpmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cmpmst"
 						}
 					},
@@ -1357,7 +1357,7 @@
 							"table": "codelist"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "codelist"
 						}
 					},
@@ -1366,7 +1366,7 @@
 							"table": "comdet"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "comdet"
 						}
 					},
@@ -1375,7 +1375,7 @@
 							"table": "comment_"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "comment_"
 						}
 					},
@@ -1384,7 +1384,7 @@
 							"table": "comment_attribute"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "comment_attribute"
 						}
 					},
@@ -1393,7 +1393,7 @@
 							"table": "commsg"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "commsg"
 						}
 					},
@@ -1402,7 +1402,7 @@
 							"table": "commst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "commst"
 						}
 					},
@@ -1411,7 +1411,7 @@
 							"table": "conflict"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "conflict"
 						}
 					},
@@ -1420,7 +1420,7 @@
 							"table": "consent_form_document"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "consent_form_document"
 						}
 					},
@@ -1429,7 +1429,7 @@
 							"table": "consent_forms"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "consent_forms"
 						}
 					},
@@ -1438,7 +1438,7 @@
 							"table": "contactlist"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "contactlist"
 						}
 					},
@@ -1447,7 +1447,7 @@
 							"table": "contacts"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "contacts"
 						}
 					},
@@ -1456,7 +1456,7 @@
 							"table": "contexttype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "contexttype"
 						}
 					},
@@ -1465,7 +1465,7 @@
 							"table": "countrymst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "countrymst"
 						}
 					},
@@ -1474,7 +1474,7 @@
 							"table": "county"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "county"
 						}
 					},
@@ -1483,7 +1483,7 @@
 							"table": "cptdata"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cptdata"
 						}
 					},
@@ -1492,7 +1492,7 @@
 							"table": "cust_item"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cust_item"
 						}
 					},
@@ -1501,7 +1501,7 @@
 							"table": "custaddr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "custaddr"
 						}
 					},
@@ -1510,7 +1510,7 @@
 							"table": "custmast"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "custmast"
 						}
 					},
@@ -1519,7 +1519,7 @@
 							"table": "custmast_attributes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "custmast_attributes"
 						}
 					},
@@ -1528,7 +1528,7 @@
 							"table": "custmast_audit_reject"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "custmast_audit_reject"
 						}
 					},
@@ -1537,7 +1537,7 @@
 							"table": "custmast_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "custmast_status"
 						}
 					},
@@ -1546,7 +1546,7 @@
 							"table": "custmast_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "custmast_types"
 						}
 					},
@@ -1555,7 +1555,7 @@
 							"table": "customdatafields"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customdatafields"
 						}
 					},
@@ -1564,7 +1564,7 @@
 							"table": "customdatavalues"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customdatavalues"
 						}
 					},
@@ -1573,7 +1573,7 @@
 							"table": "customer_carrier"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customer_carrier"
 						}
 					},
@@ -1582,7 +1582,7 @@
 							"table": "customer_inventory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customer_inventory"
 						}
 					},
@@ -1591,7 +1591,7 @@
 							"table": "customer_inventory_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customer_inventory_history"
 						}
 					},
@@ -1600,7 +1600,7 @@
 							"table": "customercontacts"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customercontacts"
 						}
 					},
@@ -1609,7 +1609,7 @@
 							"table": "customercontacttypes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customercontacttypes"
 						}
 					},
@@ -1618,7 +1618,7 @@
 							"table": "customerimage"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customerimage"
 						}
 					},
@@ -1627,7 +1627,7 @@
 							"table": "customerminimum"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customerminimum"
 						}
 					},
@@ -1636,7 +1636,7 @@
 							"table": "customernotes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "customernotes"
 						}
 					},
@@ -1645,7 +1645,7 @@
 							"table": "custprogram"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "custprogram"
 						}
 					},
@@ -1654,7 +1654,7 @@
 							"table": "cvxitem"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cvxitem"
 						}
 					},
@@ -1663,7 +1663,7 @@
 							"table": "cycle_cnt"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cycle_cnt"
 						}
 					},
@@ -1672,7 +1672,7 @@
 							"table": "cycle_numbers"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "cycle_numbers"
 						}
 					},
@@ -1681,7 +1681,7 @@
 							"table": "default_values"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "default_values"
 						}
 					},
@@ -1690,7 +1690,7 @@
 							"table": "depmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "depmst"
 						}
 					},
@@ -1699,7 +1699,7 @@
 							"table": "depmst_lane"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "depmst_lane"
 						}
 					},
@@ -1708,7 +1708,7 @@
 							"table": "dept_zone"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "dept_zone"
 						}
 					},
@@ -1717,7 +1717,7 @@
 							"table": "disability"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "disability"
 						}
 					},
@@ -1726,7 +1726,7 @@
 							"table": "disposition_level"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "disposition_level"
 						}
 					},
@@ -1735,7 +1735,7 @@
 							"table": "disposition_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "disposition_type"
 						}
 					},
@@ -1744,7 +1744,7 @@
 							"table": "dockmstr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "dockmstr"
 						}
 					},
@@ -1753,7 +1753,7 @@
 							"table": "Documentation"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "Documentation"
 						}
 					},
@@ -1762,7 +1762,7 @@
 							"table": "DocumentLibrary"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "DocumentLibrary"
 						}
 					},
@@ -1771,7 +1771,7 @@
 							"table": "documents"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "documents"
 						}
 					},
@@ -1780,7 +1780,7 @@
 							"table": "DynaControlFieldList"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "DynaControlFieldList"
 						}
 					},
@@ -1789,7 +1789,7 @@
 							"table": "DynaControlFilterElement"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "DynaControlFilterElement"
 						}
 					},
@@ -1798,7 +1798,7 @@
 							"table": "DynaControlTemlate"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "DynaControlTemlate"
 						}
 					},
@@ -1807,7 +1807,7 @@
 							"table": "DynaControlVisibility"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "DynaControlVisibility"
 						}
 					},
@@ -1816,7 +1816,7 @@
 							"table": "DynaPageTemplate"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "DynaPageTemplate"
 						}
 					},
@@ -1825,7 +1825,7 @@
 							"table": "email_templates"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "email_templates"
 						}
 					},
@@ -1834,7 +1834,7 @@
 							"table": "email_transactions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "email_transactions"
 						}
 					},
@@ -1843,7 +1843,7 @@
 							"table": "email_transactions_import"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "email_transactions_import"
 						}
 					},
@@ -1852,7 +1852,7 @@
 							"table": "email_trigger"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "email_trigger"
 						}
 					},
@@ -1861,7 +1861,7 @@
 							"table": "email_trigger_filter"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "email_trigger_filter"
 						}
 					},
@@ -1870,7 +1870,7 @@
 							"table": "emailupdcdc2"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "emailupdcdc2"
 						}
 					},
@@ -1879,7 +1879,7 @@
 							"table": "empallowedhr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empallowedhr"
 						}
 					},
@@ -1888,7 +1888,7 @@
 							"table": "empappointment"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empappointment"
 						}
 					},
@@ -1897,7 +1897,7 @@
 							"table": "empcredentials"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empcredentials"
 						}
 					},
@@ -1906,7 +1906,7 @@
 							"table": "empmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empmst"
 						}
 					},
@@ -1915,7 +1915,7 @@
 							"table": "empmst_access"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empmst_access"
 						}
 					},
@@ -1924,7 +1924,7 @@
 							"table": "empmst_customer"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empmst_customer"
 						}
 					},
@@ -1933,7 +1933,7 @@
 							"table": "empmst_pod_event"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empmst_pod_event"
 						}
 					},
@@ -1942,7 +1942,7 @@
 							"table": "empmst_program"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empmst_program"
 						}
 					},
@@ -1951,7 +1951,7 @@
 							"table": "empmst_quicklink"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empmst_quicklink"
 						}
 					},
@@ -1960,7 +1960,7 @@
 							"table": "emppswdhistory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "emppswdhistory"
 						}
 					},
@@ -1969,7 +1969,7 @@
 							"table": "empregion"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empregion"
 						}
 					},
@@ -1978,7 +1978,7 @@
 							"table": "empsecurityanswer"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "empsecurityanswer"
 						}
 					},
@@ -1987,7 +1987,7 @@
 							"table": "emptype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "emptype"
 						}
 					},
@@ -1996,7 +1996,7 @@
 							"table": "emptypemenu"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "emptypemenu"
 						}
 					},
@@ -2005,7 +2005,7 @@
 							"table": "end_of_day"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "end_of_day"
 						}
 					},
@@ -2014,7 +2014,7 @@
 							"table": "err_msg"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "err_msg"
 						}
 					},
@@ -2023,7 +2023,7 @@
 							"table": "ethnicities"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ethnicities"
 						}
 					},
@@ -2032,7 +2032,7 @@
 							"table": "eventcategory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "eventcategory"
 						}
 					},
@@ -2041,7 +2041,7 @@
 							"table": "eventcontacts"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "eventcontacts"
 						}
 					},
@@ -2050,7 +2050,7 @@
 							"table": "eventdckr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "eventdckr"
 						}
 					},
@@ -2059,7 +2059,7 @@
 							"table": "eventdocuments"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "eventdocuments"
 						}
 					},
@@ -2068,7 +2068,7 @@
 							"table": "eventnotes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "eventnotes"
 						}
 					},
@@ -2077,7 +2077,7 @@
 							"table": "eventrequisition"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "eventrequisition"
 						}
 					},
@@ -2086,7 +2086,7 @@
 							"table": "eventtype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "eventtype"
 						}
 					},
@@ -2095,7 +2095,7 @@
 							"table": "exposure_risk"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "exposure_risk"
 						}
 					},
@@ -2104,7 +2104,7 @@
 							"table": "eye_colors"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "eye_colors"
 						}
 					},
@@ -2113,7 +2113,7 @@
 							"table": "file_retent"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "file_retent"
 						}
 					},
@@ -2122,7 +2122,7 @@
 							"table": "freight_class"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "freight_class"
 						}
 					},
@@ -2131,7 +2131,7 @@
 							"table": "gcnseqno"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "gcnseqno"
 						}
 					},
@@ -2140,7 +2140,7 @@
 							"table": "gcnseqnoahfs"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "gcnseqnoahfs"
 						}
 					},
@@ -2149,7 +2149,7 @@
 							"table": "gcs_eye"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "gcs_eye"
 						}
 					},
@@ -2158,7 +2158,7 @@
 							"table": "gcs_motor"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "gcs_motor"
 						}
 					},
@@ -2167,7 +2167,7 @@
 							"table": "gcs_score"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "gcs_score"
 						}
 					},
@@ -2176,7 +2176,7 @@
 							"table": "gcs_verbal"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "gcs_verbal"
 						}
 					},
@@ -2185,7 +2185,7 @@
 							"table": "genders"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "genders"
 						}
 					},
@@ -2194,7 +2194,7 @@
 							"table": "Grade"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "Grade"
 						}
 					},
@@ -2203,7 +2203,7 @@
 							"table": "gsm_server_context"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "gsm_server_context"
 						}
 					},
@@ -2212,7 +2212,7 @@
 							"table": "hair_colors"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "hair_colors"
 						}
 					},
@@ -2221,7 +2221,7 @@
 							"table": "hic"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "hic"
 						}
 					},
@@ -2230,7 +2230,7 @@
 							"table": "hook"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "hook"
 						}
 					},
@@ -2239,7 +2239,7 @@
 							"table": "host"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "host"
 						}
 					},
@@ -2248,7 +2248,7 @@
 							"table": "icd9data"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "icd9data"
 						}
 					},
@@ -2257,7 +2257,7 @@
 							"table": "identification_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "identification_types"
 						}
 					},
@@ -2266,7 +2266,7 @@
 							"table": "IMAGE_MAPPINGS"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "IMAGE_MAPPINGS"
 						}
 					},
@@ -2275,7 +2275,7 @@
 							"table": "imatsrequestdetail"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "imatsrequestdetail"
 						}
 					},
@@ -2284,7 +2284,7 @@
 							"table": "imatsrequestheader"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "imatsrequestheader"
 						}
 					},
@@ -2293,7 +2293,7 @@
 							"table": "imatsresponsedetail"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "imatsresponsedetail"
 						}
 					},
@@ -2302,7 +2302,7 @@
 							"table": "imatsresponseheader"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "imatsresponseheader"
 						}
 					},
@@ -2311,7 +2311,7 @@
 							"table": "immunizations"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "immunizations"
 						}
 					},
@@ -2320,7 +2320,7 @@
 							"table": "immunschedule"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "immunschedule"
 						}
 					},
@@ -2329,7 +2329,7 @@
 							"table": "ingestion_locations"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ingestion_locations"
 						}
 					},
@@ -2338,7 +2338,7 @@
 							"table": "ingestion_methods"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ingestion_methods"
 						}
 					},
@@ -2347,7 +2347,7 @@
 							"table": "inv_adj"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "inv_adj"
 						}
 					},
@@ -2356,7 +2356,7 @@
 							"table": "inv_prob"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "inv_prob"
 						}
 					},
@@ -2365,7 +2365,7 @@
 							"table": "inv_substatus"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "inv_substatus"
 						}
 					},
@@ -2374,7 +2374,7 @@
 							"table": "inventory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "inventory"
 						}
 					},
@@ -2383,7 +2383,7 @@
 							"table": "inventory_distributions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "inventory_distributions"
 						}
 					},
@@ -2392,7 +2392,7 @@
 							"table": "inventory_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "inventory_history"
 						}
 					},
@@ -2401,7 +2401,7 @@
 							"table": "inventory_items"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "inventory_items"
 						}
 					},
@@ -2410,7 +2410,7 @@
 							"table": "inventorysubdetail"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "inventorysubdetail"
 						}
 					},
@@ -2419,7 +2419,7 @@
 							"table": "invoice_detail"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "invoice_detail"
 						}
 					},
@@ -2428,7 +2428,7 @@
 							"table": "invoice_header"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "invoice_header"
 						}
 					},
@@ -2437,7 +2437,7 @@
 							"table": "ipawsaddresses"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ipawsaddresses"
 						}
 					},
@@ -2446,7 +2446,7 @@
 							"table": "ipawsconfidentiality"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ipawsconfidentiality"
 						}
 					},
@@ -2455,7 +2455,7 @@
 							"table": "ipawsdefaults"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ipawsdefaults"
 						}
 					},
@@ -2464,7 +2464,7 @@
 							"table": "ipawsdistributionstatus"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ipawsdistributionstatus"
 						}
 					},
@@ -2473,7 +2473,7 @@
 							"table": "ipawsdistributiontypes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ipawsdistributiontypes"
 						}
 					},
@@ -2482,7 +2482,7 @@
 							"table": "ipawsheader"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ipawsheader"
 						}
 					},
@@ -2491,7 +2491,7 @@
 							"table": "ipawsmessagetype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ipawsmessagetype"
 						}
 					},
@@ -2500,7 +2500,7 @@
 							"table": "item"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item"
 						}
 					},
@@ -2509,7 +2509,7 @@
 							"table": "item_alloc"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_alloc"
 						}
 					},
@@ -2518,7 +2518,7 @@
 							"table": "item_alloc_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_alloc_type"
 						}
 					},
@@ -2527,7 +2527,7 @@
 							"table": "item_combinations"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_combinations"
 						}
 					},
@@ -2536,7 +2536,7 @@
 							"table": "item_group"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_group"
 						}
 					},
@@ -2545,7 +2545,7 @@
 							"table": "item_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_history"
 						}
 					},
@@ -2554,7 +2554,7 @@
 							"table": "item_plan"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_plan"
 						}
 					},
@@ -2563,7 +2563,7 @@
 							"table": "item_serial_label"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_serial_label"
 						}
 					},
@@ -2572,7 +2572,7 @@
 							"table": "item_substitution"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_substitution"
 						}
 					},
@@ -2581,7 +2581,7 @@
 							"table": "item_uomconversion"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "item_uomconversion"
 						}
 					},
@@ -2590,7 +2590,7 @@
 							"table": "itemrouting"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "itemrouting"
 						}
 					},
@@ -2599,7 +2599,7 @@
 							"table": "itmqaprc"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "itmqaprc"
 						}
 					},
@@ -2608,7 +2608,7 @@
 							"table": "kitdtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "kitdtl"
 						}
 					},
@@ -2617,7 +2617,7 @@
 							"table": "kitmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "kitmst"
 						}
 					},
@@ -2626,7 +2626,7 @@
 							"table": "lab_order_dtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "lab_order_dtl"
 						}
 					},
@@ -2635,7 +2635,7 @@
 							"table": "lab_order_hdr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "lab_order_hdr"
 						}
 					},
@@ -2644,7 +2644,7 @@
 							"table": "lab_result_codes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "lab_result_codes"
 						}
 					},
@@ -2653,7 +2653,7 @@
 							"table": "lab_test_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "lab_test_type"
 						}
 					},
@@ -2662,7 +2662,7 @@
 							"table": "lab_tests"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "lab_tests"
 						}
 					},
@@ -2671,7 +2671,7 @@
 							"table": "laboratory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "laboratory"
 						}
 					},
@@ -2680,7 +2680,7 @@
 							"table": "labspecimen"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "labspecimen"
 						}
 					},
@@ -2689,7 +2689,7 @@
 							"table": "labsreason"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "labsreason"
 						}
 					},
@@ -2698,7 +2698,7 @@
 							"table": "labstype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "labstype"
 						}
 					},
@@ -2707,7 +2707,7 @@
 							"table": "labtests"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "labtests"
 						}
 					},
@@ -2716,7 +2716,7 @@
 							"table": "labtestslaboratory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "labtestslaboratory"
 						}
 					},
@@ -2725,7 +2725,7 @@
 							"table": "labtestsspecimensource"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "labtestsspecimensource"
 						}
 					},
@@ -2734,7 +2734,7 @@
 							"table": "labtestsspecimentype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "labtestsspecimentype"
 						}
 					},
@@ -2743,7 +2743,7 @@
 							"table": "labtesttype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "labtesttype"
 						}
 					},
@@ -2752,7 +2752,7 @@
 							"table": "lane"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "lane"
 						}
 					},
@@ -2761,7 +2761,7 @@
 							"table": "languagecodes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "languagecodes"
 						}
 					},
@@ -2770,7 +2770,7 @@
 							"table": "level_of_responsivenesses"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "level_of_responsivenesses"
 						}
 					},
@@ -2779,7 +2779,7 @@
 							"table": "level_of_services"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "level_of_services"
 						}
 					},
@@ -2788,7 +2788,7 @@
 							"table": "licensure_levels"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "licensure_levels"
 						}
 					},
@@ -2797,7 +2797,7 @@
 							"table": "LivingSituation"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "LivingSituation"
 						}
 					},
@@ -2806,7 +2806,7 @@
 							"table": "loaddtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "loaddtl"
 						}
 					},
@@ -2815,7 +2815,7 @@
 							"table": "loadhdr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "loadhdr"
 						}
 					},
@@ -2824,7 +2824,7 @@
 							"table": "location_definition"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "location_definition"
 						}
 					},
@@ -2833,7 +2833,7 @@
 							"table": "location_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "location_types"
 						}
 					},
@@ -2842,7 +2842,7 @@
 							"table": "loincdata"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "loincdata"
 						}
 					},
@@ -2851,7 +2851,7 @@
 							"table": "lotnumber"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "lotnumber"
 						}
 					},
@@ -2860,7 +2860,7 @@
 							"table": "machine"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "machine"
 						}
 					},
@@ -2869,7 +2869,7 @@
 							"table": "maintenance_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "maintenance_history"
 						}
 					},
@@ -2878,7 +2878,7 @@
 							"table": "maintenance_item"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "maintenance_item"
 						}
 					},
@@ -2887,7 +2887,7 @@
 							"table": "maintenance_schedule"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "maintenance_schedule"
 						}
 					},
@@ -2896,7 +2896,7 @@
 							"table": "maintenance_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "maintenance_type"
 						}
 					},
@@ -2905,7 +2905,7 @@
 							"table": "manufacturer"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "manufacturer"
 						}
 					},
@@ -2914,7 +2914,7 @@
 							"table": "medical_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "medical_history"
 						}
 					},
@@ -2923,7 +2923,7 @@
 							"table": "medical_procedures"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "medical_procedures"
 						}
 					},
@@ -2932,7 +2932,7 @@
 							"table": "medications"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "medications"
 						}
 					},
@@ -2941,7 +2941,7 @@
 							"table": "menufile"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "menufile"
 						}
 					},
@@ -2950,7 +2950,7 @@
 							"table": "messagemanager"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "messagemanager"
 						}
 					},
@@ -2959,7 +2959,7 @@
 							"table": "Missing_PIN_TVFC"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "Missing_PIN_TVFC"
 						}
 					},
@@ -2968,7 +2968,7 @@
 							"table": "movemst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "movemst"
 						}
 					},
@@ -2977,7 +2977,7 @@
 							"table": "msg_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "msg_status"
 						}
 					},
@@ -2986,7 +2986,7 @@
 							"table": "ndc_price"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ndc_price"
 						}
 					},
@@ -2995,7 +2995,7 @@
 							"table": "ndcitemnumber"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ndcitemnumber"
 						}
 					},
@@ -3004,7 +3004,7 @@
 							"table": "News"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "News"
 						}
 					},
@@ -3013,7 +3013,7 @@
 							"table": "nimscapabilites"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "nimscapabilites"
 						}
 					},
@@ -3022,7 +3022,7 @@
 							"table": "nimsclassification"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "nimsclassification"
 						}
 					},
@@ -3031,7 +3031,7 @@
 							"table": "nimscontactheirarchy"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "nimscontactheirarchy"
 						}
 					},
@@ -3040,7 +3040,7 @@
 							"table": "nimscontacts"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "nimscontacts"
 						}
 					},
@@ -3049,7 +3049,7 @@
 							"table": "nimsresourcedckr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "nimsresourcedckr"
 						}
 					},
@@ -3058,7 +3058,7 @@
 							"table": "nimsresourcedckrcapability"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "nimsresourcedckrcapability"
 						}
 					},
@@ -3067,7 +3067,7 @@
 							"table": "nimsresourcedefinition"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "nimsresourcedefinition"
 						}
 					},
@@ -3076,7 +3076,7 @@
 							"table": "nimsresourceitem"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "nimsresourceitem"
 						}
 					},
@@ -3085,7 +3085,7 @@
 							"table": "note"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "note"
 						}
 					},
@@ -3094,7 +3094,7 @@
 							"table": "Numbers"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "Numbers"
 						}
 					},
@@ -3103,7 +3103,7 @@
 							"table": "objectsecurity"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "objectsecurity"
 						}
 					},
@@ -3112,7 +3112,7 @@
 							"table": "objecttype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "objecttype"
 						}
 					},
@@ -3121,7 +3121,7 @@
 							"table": "orange_book"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "orange_book"
 						}
 					},
@@ -3130,7 +3130,7 @@
 							"table": "orddtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "orddtl"
 						}
 					},
@@ -3139,7 +3139,7 @@
 							"table": "orddtl_place_orders"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "orddtl_place_orders"
 						}
 					},
@@ -3148,7 +3148,7 @@
 							"table": "orddtl_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "orddtl_status"
 						}
 					},
@@ -3157,7 +3157,7 @@
 							"table": "order_class"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "order_class"
 						}
 					},
@@ -3166,7 +3166,7 @@
 							"table": "order_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "order_type"
 						}
 					},
@@ -3175,7 +3175,7 @@
 							"table": "ordhdr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ordhdr"
 						}
 					},
@@ -3184,7 +3184,7 @@
 							"table": "ordhdr_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ordhdr_status"
 						}
 					},
@@ -3193,7 +3193,7 @@
 							"table": "ordoption"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ordoption"
 						}
 					},
@@ -3202,7 +3202,7 @@
 							"table": "organizational_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "organizational_status"
 						}
 					},
@@ -3211,7 +3211,7 @@
 							"table": "organizational_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "organizational_types"
 						}
 					},
@@ -3220,7 +3220,7 @@
 							"table": "package_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "package_type"
 						}
 					},
@@ -3229,7 +3229,7 @@
 							"table": "palletdet"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "palletdet"
 						}
 					},
@@ -3238,7 +3238,7 @@
 							"table": "palletmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "palletmst"
 						}
 					},
@@ -3247,7 +3247,7 @@
 							"table": "parameters"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "parameters"
 						}
 					},
@@ -3256,7 +3256,7 @@
 							"table": "parcel_rate"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "parcel_rate"
 						}
 					},
@@ -3265,7 +3265,7 @@
 							"table": "parcel_value"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "parcel_value"
 						}
 					},
@@ -3274,7 +3274,7 @@
 							"table": "parcel_zip"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "parcel_zip"
 						}
 					},
@@ -3283,7 +3283,7 @@
 							"table": "parcel_zone"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "parcel_zone"
 						}
 					},
@@ -3292,7 +3292,7 @@
 							"table": "ParentChildPageRelationship"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ParentChildPageRelationship"
 						}
 					},
@@ -3301,7 +3301,7 @@
 							"table": "physicians"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "physicians"
 						}
 					},
@@ -3310,7 +3310,7 @@
 							"table": "pick"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pick"
 						}
 					},
@@ -3319,7 +3319,7 @@
 							"table": "pickedregion"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pickedregion"
 						}
 					},
@@ -3328,7 +3328,7 @@
 							"table": "pod_cand_con_medical"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_cand_con_medical"
 						}
 					},
@@ -3337,7 +3337,7 @@
 							"table": "pod_cand_cons_complaints"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_cand_cons_complaints"
 						}
 					},
@@ -3346,7 +3346,7 @@
 							"table": "pod_cand_guarantor_employer"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_cand_guarantor_employer"
 						}
 					},
@@ -3355,7 +3355,7 @@
 							"table": "pod_candidate_allergy"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_allergy"
 						}
 					},
@@ -3364,7 +3364,7 @@
 							"table": "pod_candidate_allergy_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_allergy_history"
 						}
 					},
@@ -3373,7 +3373,7 @@
 							"table": "pod_candidate_consultation"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_consultation"
 						}
 					},
@@ -3382,7 +3382,7 @@
 							"table": "pod_candidate_department"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_department"
 						}
 					},
@@ -3391,7 +3391,7 @@
 							"table": "pod_candidate_docs"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_docs"
 						}
 					},
@@ -3400,7 +3400,7 @@
 							"table": "pod_candidate_events"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_events"
 						}
 					},
@@ -3409,7 +3409,7 @@
 							"table": "pod_candidate_functional_needs"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_functional_needs"
 						}
 					},
@@ -3418,7 +3418,7 @@
 							"table": "pod_candidate_functional_needs_allergy"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_functional_needs_allergy"
 						}
 					},
@@ -3427,7 +3427,7 @@
 							"table": "pod_candidate_functional_needs_registry"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_functional_needs_registry"
 						}
 					},
@@ -3436,7 +3436,7 @@
 							"table": "pod_candidate_functional_needs_resolutions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_functional_needs_resolutions"
 						}
 					},
@@ -3445,7 +3445,7 @@
 							"table": "pod_candidate_immunization"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_immunization"
 						}
 					},
@@ -3454,7 +3454,7 @@
 							"table": "pod_candidate_insurance"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_insurance"
 						}
 					},
@@ -3463,7 +3463,7 @@
 							"table": "pod_candidate_med_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_med_history"
 						}
 					},
@@ -3472,7 +3472,7 @@
 							"table": "pod_candidate_medication"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_medication"
 						}
 					},
@@ -3481,7 +3481,7 @@
 							"table": "pod_candidate_medication_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_medication_history"
 						}
 					},
@@ -3490,7 +3490,7 @@
 							"table": "pod_candidate_notes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_notes"
 						}
 					},
@@ -3499,7 +3499,7 @@
 							"table": "pod_candidate_patientids"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_patientids"
 						}
 					},
@@ -3508,7 +3508,7 @@
 							"table": "pod_candidate_personal_effects"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_personal_effects"
 						}
 					},
@@ -3517,7 +3517,7 @@
 							"table": "pod_candidate_physicians"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_physicians"
 						}
 					},
@@ -3526,7 +3526,7 @@
 							"table": "pod_candidate_profiles"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_profiles"
 						}
 					},
@@ -3535,7 +3535,7 @@
 							"table": "pod_candidate_profiles_supplement"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_profiles_supplement"
 						}
 					},
@@ -3544,7 +3544,7 @@
 							"table": "pod_candidate_relations"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_relations"
 						}
 					},
@@ -3553,7 +3553,7 @@
 							"table": "pod_candidate_resolutions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_resolutions"
 						}
 					},
@@ -3562,7 +3562,7 @@
 							"table": "pod_candidate_special_needs"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_special_needs"
 						}
 					},
@@ -3571,7 +3571,7 @@
 							"table": "pod_candidate_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_status"
 						}
 					},
@@ -3580,7 +3580,7 @@
 							"table": "pod_candidate_symptom"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_candidate_symptom"
 						}
 					},
@@ -3589,7 +3589,7 @@
 							"table": "pod_event_locations"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_event_locations"
 						}
 					},
@@ -3598,7 +3598,7 @@
 							"table": "pod_event_relatedids"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_event_relatedids"
 						}
 					},
@@ -3607,7 +3607,7 @@
 							"table": "pod_event_requirements"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_event_requirements"
 						}
 					},
@@ -3616,7 +3616,7 @@
 							"table": "pod_event_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_event_types"
 						}
 					},
@@ -3625,7 +3625,7 @@
 							"table": "pod_events"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_events"
 						}
 					},
@@ -3634,7 +3634,7 @@
 							"table": "pod_severity_levels"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_severity_levels"
 						}
 					},
@@ -3643,7 +3643,7 @@
 							"table": "pod_trans_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_trans_types"
 						}
 					},
@@ -3652,7 +3652,7 @@
 							"table": "pod_transactions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_transactions"
 						}
 					},
@@ -3661,7 +3661,7 @@
 							"table": "pod_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pod_types"
 						}
 					},
@@ -3670,7 +3670,7 @@
 							"table": "PODCandidateMessage"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "PODCandidateMessage"
 						}
 					},
@@ -3679,7 +3679,7 @@
 							"table": "PODCandidateMessageStatus"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "PODCandidateMessageStatus"
 						}
 					},
@@ -3688,7 +3688,7 @@
 							"table": "podet"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "podet"
 						}
 					},
@@ -3697,7 +3697,7 @@
 							"table": "podstatus"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "podstatus"
 						}
 					},
@@ -3706,7 +3706,7 @@
 							"table": "pomst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pomst"
 						}
 					},
@@ -3715,7 +3715,7 @@
 							"table": "pool"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pool"
 						}
 					},
@@ -3724,7 +3724,7 @@
 							"table": "pool_item"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pool_item"
 						}
 					},
@@ -3733,7 +3733,7 @@
 							"table": "poolprogram"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "poolprogram"
 						}
 					},
@@ -3742,7 +3742,7 @@
 							"table": "primary_impression"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "primary_impression"
 						}
 					},
@@ -3751,7 +3751,7 @@
 							"table": "print_form"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "print_form"
 						}
 					},
@@ -3760,7 +3760,7 @@
 							"table": "printlabel"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "printlabel"
 						}
 					},
@@ -3769,7 +3769,7 @@
 							"table": "printmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "printmst"
 						}
 					},
@@ -3778,7 +3778,7 @@
 							"table": "printmst_zone"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "printmst_zone"
 						}
 					},
@@ -3787,7 +3787,7 @@
 							"table": "printoptions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "printoptions"
 						}
 					},
@@ -3796,7 +3796,7 @@
 							"table": "priority_group"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "priority_group"
 						}
 					},
@@ -3805,7 +3805,7 @@
 							"table": "priority_group_item"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "priority_group_item"
 						}
 					},
@@ -3814,7 +3814,7 @@
 							"table": "Prioritygroups_Andre"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "Prioritygroups_Andre"
 						}
 					},
@@ -3823,7 +3823,7 @@
 							"table": "prod_stg_dtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "prod_stg_dtl"
 						}
 					},
@@ -3832,7 +3832,7 @@
 							"table": "prod_stg_mst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "prod_stg_mst"
 						}
 					},
@@ -3841,7 +3841,7 @@
 							"table": "prodgrploctype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "prodgrploctype"
 						}
 					},
@@ -3850,7 +3850,7 @@
 							"table": "product_dosages"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "product_dosages"
 						}
 					},
@@ -3859,7 +3859,7 @@
 							"table": "product_form_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "product_form_types"
 						}
 					},
@@ -3868,7 +3868,7 @@
 							"table": "product_forms"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "product_forms"
 						}
 					},
@@ -3877,7 +3877,7 @@
 							"table": "products"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "products"
 						}
 					},
@@ -3886,7 +3886,7 @@
 							"table": "program"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "program"
 						}
 					},
@@ -3895,7 +3895,7 @@
 							"table": "programhistory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "programhistory"
 						}
 					},
@@ -3904,7 +3904,7 @@
 							"table": "programtransaction"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "programtransaction"
 						}
 					},
@@ -3913,7 +3913,7 @@
 							"table": "provider_administered_group_item"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_administered_group_item"
 						}
 					},
@@ -3922,7 +3922,7 @@
 							"table": "provider_administered_groups"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_administered_groups"
 						}
 					},
@@ -3931,7 +3931,7 @@
 							"table": "provider_administered_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_administered_history"
 						}
 					},
@@ -3940,7 +3940,7 @@
 							"table": "provider_administered_warnings"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_administered_warnings"
 						}
 					},
@@ -3949,7 +3949,7 @@
 							"table": "provider_corrective_action"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_corrective_action"
 						}
 					},
@@ -3958,7 +3958,7 @@
 							"table": "provider_item_choice"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_item_choice"
 						}
 					},
@@ -3967,7 +3967,7 @@
 							"table": "provider_item_choice_bkp_20210430"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_item_choice_bkp_20210430"
 						}
 					},
@@ -3976,7 +3976,7 @@
 							"table": "provider_priority_allocation"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_priority_allocation"
 						}
 					},
@@ -3985,7 +3985,7 @@
 							"table": "provider_priority_groups"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_priority_groups"
 						}
 					},
@@ -3994,7 +3994,7 @@
 							"table": "provider_project_codes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_project_codes"
 						}
 					},
@@ -4003,7 +4003,7 @@
 							"table": "provider_reconciliation_reasons"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_reconciliation_reasons"
 						}
 					},
@@ -4012,7 +4012,7 @@
 							"table": "provider_reject_reason"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_reject_reason"
 						}
 					},
@@ -4021,7 +4021,7 @@
 							"table": "provider_stock_level"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_stock_level"
 						}
 					},
@@ -4030,7 +4030,7 @@
 							"table": "provider_stock_level_backup_10292021"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_stock_level_backup_10292021"
 						}
 					},
@@ -4039,7 +4039,7 @@
 							"table": "provider_temperatures"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_temperatures"
 						}
 					},
@@ -4048,7 +4048,7 @@
 							"table": "provider_tof"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_tof"
 						}
 					},
@@ -4057,7 +4057,7 @@
 							"table": "provider_transfer_reasons"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_transfer_reasons"
 						}
 					},
@@ -4066,7 +4066,7 @@
 							"table": "provider_wasted_checks"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_wasted_checks"
 						}
 					},
@@ -4075,7 +4075,7 @@
 							"table": "provider_wasted_reasons"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provider_wasted_reasons"
 						}
 					},
@@ -4084,7 +4084,7 @@
 							"table": "providerprofile"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "providerprofile"
 						}
 					},
@@ -4093,7 +4093,7 @@
 							"table": "provupdcdc"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "provupdcdc"
 						}
 					},
@@ -4102,7 +4102,7 @@
 							"table": "proxydefinition"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "proxydefinition"
 						}
 					},
@@ -4111,7 +4111,7 @@
 							"table": "pulse_rhythms"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "pulse_rhythms"
 						}
 					},
@@ -4120,7 +4120,7 @@
 							"table": "qagroup"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "qagroup"
 						}
 					},
@@ -4129,7 +4129,7 @@
 							"table": "qahistory"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "qahistory"
 						}
 					},
@@ -4138,7 +4138,7 @@
 							"table": "qaprocess"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "qaprocess"
 						}
 					},
@@ -4147,7 +4147,7 @@
 							"table": "qarank"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "qarank"
 						}
 					},
@@ -4156,7 +4156,7 @@
 							"table": "qaresults"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "qaresults"
 						}
 					},
@@ -4165,7 +4165,7 @@
 							"table": "qatype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "qatype"
 						}
 					},
@@ -4174,7 +4174,7 @@
 							"table": "questionnaire_answers"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "questionnaire_answers"
 						}
 					},
@@ -4183,7 +4183,7 @@
 							"table": "questionnaire_dosages"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "questionnaire_dosages"
 						}
 					},
@@ -4192,7 +4192,7 @@
 							"table": "questionnaire_questions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "questionnaire_questions"
 						}
 					},
@@ -4201,7 +4201,7 @@
 							"table": "questionnaires"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "questionnaires"
 						}
 					},
@@ -4210,7 +4210,7 @@
 							"table": "questionnnaire_resolutions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "questionnnaire_resolutions"
 						}
 					},
@@ -4219,7 +4219,7 @@
 							"table": "race"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "race"
 						}
 					},
@@ -4228,7 +4228,7 @@
 							"table": "rate"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rate"
 						}
 					},
@@ -4237,7 +4237,7 @@
 							"table": "region"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "region"
 						}
 					},
@@ -4246,7 +4246,7 @@
 							"table": "relationships"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "relationships"
 						}
 					},
@@ -4255,7 +4255,7 @@
 							"table": "religion"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "religion"
 						}
 					},
@@ -4264,7 +4264,7 @@
 							"table": "report"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "report"
 						}
 					},
@@ -4273,7 +4273,7 @@
 							"table": "report_rate"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "report_rate"
 						}
 					},
@@ -4282,7 +4282,7 @@
 							"table": "requisitiondtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "requisitiondtl"
 						}
 					},
@@ -4291,7 +4291,7 @@
 							"table": "requisitionhdr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "requisitionhdr"
 						}
 					},
@@ -4300,7 +4300,7 @@
 							"table": "ResidenceType"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "ResidenceType"
 						}
 					},
@@ -4309,7 +4309,7 @@
 							"table": "respitory_efforts"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "respitory_efforts"
 						}
 					},
@@ -4318,7 +4318,7 @@
 							"table": "return_action"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "return_action"
 						}
 					},
@@ -4327,7 +4327,7 @@
 							"table": "return_category"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "return_category"
 						}
 					},
@@ -4336,7 +4336,7 @@
 							"table": "return_reason"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "return_reason"
 						}
 					},
@@ -4345,7 +4345,7 @@
 							"table": "route_customer"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "route_customer"
 						}
 					},
@@ -4354,7 +4354,7 @@
 							"table": "route_zip"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "route_zip"
 						}
 					},
@@ -4363,7 +4363,7 @@
 							"table": "routemst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "routemst"
 						}
 					},
@@ -4372,7 +4372,7 @@
 							"table": "rpt_args"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rpt_args"
 						}
 					},
@@ -4381,7 +4381,7 @@
 							"table": "rpt_col_dtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rpt_col_dtl"
 						}
 					},
@@ -4390,7 +4390,7 @@
 							"table": "rptdet"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rptdet"
 						}
 					},
@@ -4399,7 +4399,7 @@
 							"table": "rptmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rptmst"
 						}
 					},
@@ -4408,7 +4408,7 @@
 							"table": "rptsch"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rptsch"
 						}
 					},
@@ -4417,7 +4417,7 @@
 							"table": "rt_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rt_type"
 						}
 					},
@@ -4426,7 +4426,7 @@
 							"table": "rtdet"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rtdet"
 						}
 					},
@@ -4435,7 +4435,7 @@
 							"table": "rtdet_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rtdet_status"
 						}
 					},
@@ -4444,7 +4444,7 @@
 							"table": "rtmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rtmst"
 						}
 					},
@@ -4453,7 +4453,7 @@
 							"table": "rtmst_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rtmst_status"
 						}
 					},
@@ -4462,7 +4462,7 @@
 							"table": "rtn_ctn_det"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rtn_ctn_det"
 						}
 					},
@@ -4471,7 +4471,7 @@
 							"table": "rtn_ctn_mst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "rtn_ctn_mst"
 						}
 					},
@@ -4480,7 +4480,7 @@
 							"table": "scan_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scan_types"
 						}
 					},
@@ -4489,7 +4489,7 @@
 							"table": "scandetail"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scandetail"
 						}
 					},
@@ -4498,7 +4498,7 @@
 							"table": "scanheader"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scanheader"
 						}
 					},
@@ -4507,7 +4507,7 @@
 							"table": "scans"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scans"
 						}
 					},
@@ -4516,7 +4516,7 @@
 							"table": "scheduled_email"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scheduled_email"
 						}
 					},
@@ -4525,7 +4525,7 @@
 							"table": "scheduled_email_message"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scheduled_email_message"
 						}
 					},
@@ -4534,7 +4534,7 @@
 							"table": "scheduled_filter"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scheduled_filter"
 						}
 					},
@@ -4543,7 +4543,7 @@
 							"table": "scheduled_report"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scheduled_report"
 						}
 					},
@@ -4552,7 +4552,7 @@
 							"table": "scheduled_tasks"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "scheduled_tasks"
 						}
 					},
@@ -4561,7 +4561,7 @@
 							"table": "School"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "School"
 						}
 					},
@@ -4570,7 +4570,7 @@
 							"table": "security_level"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "security_level"
 						}
 					},
@@ -4579,7 +4579,7 @@
 							"table": "securitygroup"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "securitygroup"
 						}
 					},
@@ -4588,7 +4588,7 @@
 							"table": "securityquestions"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "securityquestions"
 						}
 					},
@@ -4597,7 +4597,7 @@
 							"table": "serial"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "serial"
 						}
 					},
@@ -4606,7 +4606,7 @@
 							"table": "serial_history"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "serial_history"
 						}
 					},
@@ -4615,7 +4615,7 @@
 							"table": "serial_pick"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "serial_pick"
 						}
 					},
@@ -4624,7 +4624,7 @@
 							"table": "servicetypes"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "servicetypes"
 						}
 					},
@@ -4633,7 +4633,7 @@
 							"table": "severity"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "severity"
 						}
 					},
@@ -4642,7 +4642,7 @@
 							"table": "severity_field"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "severity_field"
 						}
 					},
@@ -4651,7 +4651,7 @@
 							"table": "shfmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "shfmst"
 						}
 					},
@@ -4660,7 +4660,7 @@
 							"table": "shpdtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "shpdtl"
 						}
 					},
@@ -4669,7 +4669,7 @@
 							"table": "shpmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "shpmst"
 						}
 					},
@@ -4678,7 +4678,7 @@
 							"table": "smallprovider"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "smallprovider"
 						}
 					},
@@ -4687,7 +4687,7 @@
 							"table": "special_needs"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "special_needs"
 						}
 					},
@@ -4696,7 +4696,7 @@
 							"table": "special_needs_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "special_needs_types"
 						}
 					},
@@ -4705,7 +4705,7 @@
 							"table": "specimensource"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "specimensource"
 						}
 					},
@@ -4714,7 +4714,7 @@
 							"table": "specimentype"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "specimentype"
 						}
 					},
@@ -4723,7 +4723,7 @@
 							"table": "SQLEMAILSTRINGS"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "SQLEMAILSTRINGS"
 						}
 					},
@@ -4732,7 +4732,7 @@
 							"table": "standard_directives"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "standard_directives"
 						}
 					},
@@ -4741,7 +4741,7 @@
 							"table": "states"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "states"
 						}
 					},
@@ -4750,7 +4750,7 @@
 							"table": "stntbl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "stntbl"
 						}
 					},
@@ -4759,7 +4759,7 @@
 							"table": "stroke_scales"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "stroke_scales"
 						}
 					},
@@ -4768,7 +4768,7 @@
 							"table": "subregion"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "subregion"
 						}
 					},
@@ -4777,7 +4777,7 @@
 							"table": "suggested_movement"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "suggested_movement"
 						}
 					},
@@ -4786,7 +4786,7 @@
 							"table": "summary_activity"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "summary_activity"
 						}
 					},
@@ -4795,7 +4795,7 @@
 							"table": "summary_cyclecount"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "summary_cyclecount"
 						}
 					},
@@ -4804,7 +4804,7 @@
 							"table": "symptom"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "symptom"
 						}
 					},
@@ -4813,7 +4813,7 @@
 							"table": "sysdiagrams"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "sysdiagrams"
 						}
 					},
@@ -4822,7 +4822,7 @@
 							"table": "syspar_def"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "syspar_def"
 						}
 					},
@@ -4831,7 +4831,7 @@
 							"table": "syspar_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "syspar_type"
 						}
 					},
@@ -4840,7 +4840,7 @@
 							"table": "syspar_value"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "syspar_value"
 						}
 					},
@@ -4849,7 +4849,7 @@
 							"table": "system_lock"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "system_lock"
 						}
 					},
@@ -4858,7 +4858,7 @@
 							"table": "tagmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "tagmst"
 						}
 					},
@@ -4867,7 +4867,7 @@
 							"table": "task"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "task"
 						}
 					},
@@ -4876,7 +4876,7 @@
 							"table": "task_emp"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "task_emp"
 						}
 					},
@@ -4885,7 +4885,7 @@
 							"table": "Teacher"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "Teacher"
 						}
 					},
@@ -4894,7 +4894,7 @@
 							"table": "termofuse"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "termofuse"
 						}
 					},
@@ -4903,7 +4903,7 @@
 							"table": "thrombolytics"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "thrombolytics"
 						}
 					},
@@ -4912,7 +4912,7 @@
 							"table": "trans_type"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "trans_type"
 						}
 					},
@@ -4921,7 +4921,7 @@
 							"table": "transport"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "transport"
 						}
 					},
@@ -4930,7 +4930,7 @@
 							"table": "transportation_dtl"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "transportation_dtl"
 						}
 					},
@@ -4939,7 +4939,7 @@
 							"table": "transportation_hdr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "transportation_hdr"
 						}
 					},
@@ -4948,7 +4948,7 @@
 							"table": "triage_status"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "triage_status"
 						}
 					},
@@ -4957,7 +4957,7 @@
 							"table": "truckmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "truckmst"
 						}
 					},
@@ -4966,7 +4966,7 @@
 							"table": "unit_of_measures"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "unit_of_measures"
 						}
 					},
@@ -4975,7 +4975,7 @@
 							"table": "uom"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "uom"
 						}
 					},
@@ -4984,7 +4984,7 @@
 							"table": "uomconv"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "uomconv"
 						}
 					},
@@ -4993,7 +4993,7 @@
 							"table": "user_string"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "user_string"
 						}
 					},
@@ -5002,7 +5002,7 @@
 							"table": "usermenu"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "usermenu"
 						}
 					},
@@ -5011,7 +5011,7 @@
 							"table": "users"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "users"
 						}
 					},
@@ -5020,7 +5020,7 @@
 							"table": "vaccinedistribution"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vaccinedistribution"
 						}
 					},
@@ -5029,7 +5029,7 @@
 							"table": "vaccinedistsumm"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vaccinedistsumm"
 						}
 					},
@@ -5038,7 +5038,7 @@
 							"table": "vehicle_types"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vehicle_types"
 						}
 					},
@@ -5047,7 +5047,7 @@
 							"table": "vehicle_units"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vehicle_units"
 						}
 					},
@@ -5056,7 +5056,7 @@
 							"table": "vendaddr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vendaddr"
 						}
 					},
@@ -5065,7 +5065,7 @@
 							"table": "venddetail"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "venddetail"
 						}
 					},
@@ -5074,7 +5074,7 @@
 							"table": "venmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "venmst"
 						}
 					},
@@ -5083,7 +5083,7 @@
 							"table": "vitals_pupils"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vitals_pupils"
 						}
 					},
@@ -5092,7 +5092,7 @@
 							"table": "vitals_skin_capillary"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vitals_skin_capillary"
 						}
 					},
@@ -5101,7 +5101,7 @@
 							"table": "vitals_skin_color"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vitals_skin_color"
 						}
 					},
@@ -5110,7 +5110,7 @@
 							"table": "vitals_skin_moist"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vitals_skin_moist"
 						}
 					},
@@ -5119,7 +5119,7 @@
 							"table": "vitals_skin_temperature"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vitals_skin_temperature"
 						}
 					},
@@ -5128,7 +5128,7 @@
 							"table": "vitals_skin_turgor"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "vitals_skin_turgor"
 						}
 					},
@@ -5137,7 +5137,7 @@
 							"table": "wave"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wave"
 						}
 					},
@@ -5146,7 +5146,7 @@
 							"table": "web"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "web"
 						}
 					},
@@ -5155,7 +5155,7 @@
 							"table": "webcontent"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "webcontent"
 						}
 					},
@@ -5164,7 +5164,7 @@
 							"table": "webcontent2"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "webcontent2"
 						}
 					},
@@ -5173,7 +5173,7 @@
 							"table": "weight_groups"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "weight_groups"
 						}
 					},
@@ -5182,7 +5182,7 @@
 							"table": "wh_zone"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wh_zone"
 						}
 					},
@@ -5191,7 +5191,7 @@
 							"table": "wh_zone_putaway"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wh_zone_putaway"
 						}
 					},
@@ -5200,7 +5200,7 @@
 							"table": "whmst"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "whmst"
 						}
 					},
@@ -5209,7 +5209,7 @@
 							"table": "whmst_email_configuration"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "whmst_email_configuration"
 						}
 					},
@@ -5218,7 +5218,7 @@
 							"table": "wrk_Adult_Providers_08262021"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrk_Adult_Providers_08262021"
 						}
 					},
@@ -5227,7 +5227,7 @@
 							"table": "wrk_AdultAndPediUpdateToPediOnly"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrk_AdultAndPediUpdateToPediOnly"
 						}
 					},
@@ -5236,7 +5236,7 @@
 							"table": "wrk_MSL_Counts"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrk_MSL_Counts"
 						}
 					},
@@ -5245,7 +5245,7 @@
 							"table": "wrk_MSL_Updates_Mstr"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrk_MSL_Updates_Mstr"
 						}
 					},
@@ -5254,7 +5254,7 @@
 							"table": "wrk_November_MSL_10252021"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrk_November_MSL_10252021"
 						}
 					},
@@ -5263,7 +5263,7 @@
 							"table": "wrk_PediOnlyUpdateToAdultAndPedi"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrk_PediOnlyUpdateToAdultAndPedi"
 						}
 					},
@@ -5272,7 +5272,7 @@
 							"table": "wrk_ProviderMSLsToUpdate"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrk_ProviderMSLsToUpdate"
 						}
 					},
@@ -5281,7 +5281,7 @@
 							"table": "wrk_Vaxelis_MSLs"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrk_Vaxelis_MSLs"
 						}
 					},
@@ -5290,7 +5290,7 @@
 							"table": "wrkBatch1VaxelisChoiceUpdates_042021"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrkBatch1VaxelisChoiceUpdates_042021"
 						}
 					},
@@ -5299,7 +5299,7 @@
 							"table": "wrkBatch2VaxelisChoiceUpdates_042021"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrkBatch2VaxelisChoiceUpdates_042021"
 						}
 					},
@@ -5308,7 +5308,7 @@
 							"table": "wrkMissingChoiceUpdates_042021"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "wrkMissingChoiceUpdates_042021"
 						}
 					},
@@ -5317,7 +5317,7 @@
 							"table": "zip_code"
 						},
 						"destination": {
-							"schema": "dbo",
+							"schema": "lz",
 							"table": "zip_code"
 						}
 					}

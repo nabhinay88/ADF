@@ -31,7 +31,7 @@
 								},
 								{
 									"name": "Destination",
-									"value": "dbo.@{item().destination.table}"
+									"value": "lz.@{item().destination.table}"
 								}
 							],
 							"typeProperties": {
